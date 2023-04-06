@@ -83,7 +83,51 @@ nav a:hover {
   color: gray;
 }
 
-/* MAIN GENERAL */
+/* MAIN INDEX */
+
+main {
+  position: relative;
+}
+
+main h1 {
+  font-size: 50px;
+  margin: 30px 15px 0 15px;
+  font-weight: lighter;
+  color: rgb(250, 128, 114);
+}
+
+main h2 {
+  margin-bottom: 10px;
+  font-size: 50px;
+  margin: 0px 15px 10px;
+  font-weight: lighter;
+  color: rgb(250, 128, 114);
+  /*  text-shadow: 3px 1px rgb(244, 168, 160);*/
+}
+main p {
+  font-size: 20px;
+  margin: 10px 15px;
+  color: rgb(27, 23, 23);
+}
+
+div {
+  display: inline-block;
+  margin: 10px 15px;
+}
+
+div ul li {
+  list-style: none;
+}
+
+aside {
+  position: relative;
+  margin: 0 50%;
+  width: 50%;
+}
+
+aside img {
+  width: 70%;
+}
 
 /* MAIN ABOUT */
 

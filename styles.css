@@ -197,11 +197,13 @@ footer button:hover {
 .me-presentation {
   width: 50%;
   float: left;
+  margin-left: 30px;
 }
 
 .picture-me img {
   width: 250px;
   border-radius: 5px;
+  margin-left: 40px;
 }
 .me-presentation,
 .picture-me {
@@ -211,7 +213,8 @@ footer button:hover {
 .about-me {
   width: 50%;
   float: right;
-  margin-top: 50px;
+  margin-right: 20px;
+  margin-top: 20px;
 }
 .picture-about-me img {
   width: 250px;

@@ -90,7 +90,7 @@ main {
   position: relative;
 }
 
-.title {
+main h1 {
   font-size: 50px;
   margin-left: 20px;
   font-weight: lighter;
@@ -118,7 +118,8 @@ main h2 {
   text-shadow: 1px 1px #0844a4;
 }
 
-main div {
+main .info,
+.image-main {
   display: inline-block;
   margin: 10px;
 }
@@ -152,7 +153,8 @@ footer {
   padding-left: 25px;
 }
 
-footer button {
+footer button,
+.button-about {
   font-size: 15px;
   margin: 10px;
   padding: 15px;
@@ -167,7 +169,66 @@ footer button:hover {
   color: #f7f6f6;
 }
 
+/*HEADER ABOUT*/
+
+.title {
+  font-size: 50px;
+  margin-left: 20px;
+  font-weight: bold;
+  color: #0844a4;
+}
 /* MAIN ABOUT */
+
+.hello,
+.experience {
+  padding: 10px 5px;
+  font-size: 25px;
+  margin-left: 20px;
+  font-weight: lighter;
+  color: #0844a4;
+}
+.content-about {
+  margin: 0px 20px;
+  display: block;
+  font-family: Plus Jakarta Sans;
+  font-size: 20px;
+  color: #0844a4;
+}
+.me-presentation {
+  width: 50%;
+  float: left;
+}
+
+.picture-me img {
+  width: 250px;
+  border-radius: 5px;
+}
+.me-presentation,
+.picture-me {
+  display: block;
+}
+
+.about-me {
+  width: 50%;
+  float: right;
+  margin-top: 50px;
+}
+.picture-about-me img {
+  width: 250px;
+  margin: 0px 450px;
+}
+.about-me,
+.picture-about-me img {
+  display: block;
+}
+.button-about {
+  margin-left: 100px;
+  margin-bottom: 10px;
+}
+button:hover {
+  background-color: #a0e4cbcd;
+  color: #f7f6f6;
+}
 
 /* MAIN ADVANTAGES */
 

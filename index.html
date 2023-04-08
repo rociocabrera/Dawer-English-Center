@@ -10,18 +10,25 @@
       type="image/x-icon"
       href="assets/images/logo-letter-d.jpeg"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
       <!-- colocar un select para languages y login-->
 
-      <a href="index.html"
-        ><img
+      <a href="index.html">
+        <img
           class="logo"
           src="assets/images/logo-letter-d.jpeg"
           alt="logo letra d"
-      /></a>
-      <h1 class="slogan">Dawer English Center</h1>
+        />
+        <div class="slogan"><h1>Dawer English Center</h1></div>
+      </a>
 
       <nav>
         <ul>
@@ -39,14 +46,14 @@
 
     <main>
       <!-- contenido ppal de todo el doc -->
-      <h1>Boost your career</h1>
+      <h1 class="title">Boost your career</h1>
       <h2>Invest in your future for a perfect English.</h2>
-      <p>
+      <p class="content">
         If you want to work anywhere in the world this is your chance to improve
         your English.
       </p>
 
-      <div>
+      <div class="info">
         <ul>
           <li>Experienced teachers who understand your needs.</li>
           <li>You can choose individual and/or group classes.</li>
@@ -55,14 +62,16 @@
         </ul>
       </div>
 
-      <aside>
-        <img src="assets/images/background-english.jpg" />
-      </aside>
+      <div class="image-main">
+        <aside>
+          <img src="assets/images/background-english.jpg" />
+        </aside>
+      </div>
     </main>
     <footer>
       <!-- pie de pág -->
-      <button>10% off</button>
-      <button>for your first four months</button>
+      <button class="discount">10% Off</button>
+      <button class="first-month">For your first four months</button>
     </footer>
   </body>
 </html>

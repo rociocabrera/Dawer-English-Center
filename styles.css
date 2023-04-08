@@ -232,7 +232,11 @@ button:hover {
   background-color: #a0e4cbcd;
   color: #f7f6f6;
 }
-
+/*FOOTER ABOUT */
+.footer-about {
+  color: #0844a4;
+  width: 20%;
+}
 /* MAIN ADVANTAGES */
 
 /* MAIN SUSCRIPTIONS */

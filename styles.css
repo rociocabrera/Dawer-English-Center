@@ -154,7 +154,9 @@ footer {
 }
 
 footer button,
-.button-about {
+.button-about,
+.subscription-button,
+.plan-button {
   font-size: 15px;
   margin: 10px;
   padding: 15px;
@@ -171,7 +173,9 @@ footer button:hover {
 
 /*HEADER ABOUT*/
 
-.title {
+.title,
+.advantages-title,
+.subscription-title {
   font-size: 50px;
   margin-left: 20px;
   font-weight: bold;
@@ -236,19 +240,14 @@ button:hover {
 .advantages-button,
 .footer-about,
 .footer-advantages,
-.advantages-line {
+.advantages-line,
+.subscription-line {
   color: #0844a4;
   width: 20%;
 }
 
 /* MAIN ADVANTAGES */
 
-.advantages-title {
-  margin: 10px 20px;
-  font-size: 50px;
-  font-weight: bold;
-  color: #0844a4;
-}
 .advantages-container {
   width: 15%;
   float: left;
@@ -276,8 +275,44 @@ main .world {
 .advantages-button {
   margin-left: 40%;
 }
-/* MAIN SUSCRIPTIONS */
 
+/* MAIN subscription */
+
+.subscription-button {
+  width: 90%;
+}
+.subscription-silver {
+  background-color: #7f83b6;
+}
+.silver-title,
+.gold-title,
+.platinum-title {
+  text-align: center;
+  color: #f7f6f6;
+}
+.subscription-gold {
+  background-color: #4cb5bc;
+}
+.subscription-platinum {
+  background-color: #36be7e;
+}
+.subscription-silver,
+.subscription-gold,
+.subscription-platinum {
+  margin: 15px;
+  border-radius: 5%;
+  height: 350px;
+  width: 30%;
+  float: left;
+  box-sizing: border-box;
+  padding: 0 15px;
+}
+.plan-button {
+  margin-left: 40%;
+}
+.subscription-container::after {
+  display: table;
+}
 /* MAIN CONTACT */
 
 /* FOOTER */ ;

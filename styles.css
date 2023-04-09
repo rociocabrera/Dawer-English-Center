@@ -233,12 +233,49 @@ button:hover {
   color: #f7f6f6;
 }
 /*FOOTER ABOUT */
-.footer-about {
+.advantages-button,
+.footer-about,
+.footer-advantages,
+.advantages-line {
   color: #0844a4;
   width: 20%;
 }
+
 /* MAIN ADVANTAGES */
 
+.advantages-title {
+  margin: 10px 20px;
+  font-size: 50px;
+  font-weight: bold;
+  color: #0844a4;
+}
+.advantages-container {
+  width: 15%;
+  float: left;
+  text-align: center;
+  margin-left: 8%;
+}
+
+.advantages-container img {
+  max-width: 150px;
+  height: auto;
+  padding: 0px 10px;
+  border-radius: 50%;
+}
+main .world {
+  max-width: 170px;
+  margin: 10px;
+}
+
+.advantages-content {
+  margin-top: 0;
+  text-align: left;
+  padding: 15px 5px;
+}
+
+.advantages-button {
+  margin-left: 40%;
+}
 /* MAIN SUSCRIPTIONS */
 
 /* MAIN CONTACT */

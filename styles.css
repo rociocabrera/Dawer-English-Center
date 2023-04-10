@@ -174,7 +174,6 @@ footer button:hover {
 /*HEADER ABOUT*/
 
 .title,
-.advantages-title,
 .subscription-title {
   font-size: 50px;
   margin-left: 20px;
@@ -248,6 +247,14 @@ button:hover {
 
 /* MAIN ADVANTAGES */
 
+.advantages-title {
+  font-size: 50px;
+  margin-left: 20px;
+  margin-bottom: 40px;
+  font-weight: bold;
+  color: #0844a4;
+}
+
 .advantages-container {
   width: 15%;
   float: left;
@@ -276,7 +283,7 @@ main .world {
   margin-left: 40%;
 }
 
-/* MAIN subscription */
+/* MAIN SUBCRIPTION */
 
 .subscription-button {
   margin-top: 30px;
@@ -324,4 +331,109 @@ main .world {
 }
 /* MAIN CONTACT */
 
-/* FOOTER */ ;
+.general-content {
+  width: 100%;
+  height: auto;
+}
+.title-contact {
+  font-size: 50px;
+  margin: 20px;
+  font-weight: bold;
+  color: #0844a4;
+}
+.contact-line {
+  color: #0844a4;
+  width: 20%;
+}
+
+.contact-content {
+  float: left;
+  width: 45%;
+  height: auto;
+  margin-left: 20px;
+}
+
+.form-info {
+  width: 40%;
+  display: inline-block;
+  height: auto;
+}
+.form {
+  margin-left: 40px;
+  width: 40%;
+  display: inline-block;
+  height: auto;
+  vertical-align: top;
+}
+form input {
+  text-align: left;
+  float: right;
+  margin-top: 5px;
+  border-color: #7f83b6;
+  border-style: double;
+}
+
+label {
+  display: block;
+  margin-top: 5px;
+  float: left;
+  font-family: tabel;
+  color: #7f83b6;
+  font-size: 15px;
+}
+
+textarea {
+  margin-top: 10px;
+  width: 100%;
+  height: 200px;
+  border-color: #7f83b6;
+}
+textarea::placeholder {
+  position: absolute;
+  padding: 5px 5px;
+  text-align: left;
+  color: #7f83b6;
+}
+.form button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 15px 20px;
+  font-size: 15px;
+  border-radius: 5px;
+  border: #a0e4cbcd;
+  font-family: Plus Jakarta Sans;
+  color: #0844a4;
+}
+
+.form-info p {
+  text-align: justify;
+  margin: 10px 20px;
+  font-weight: lighter;
+  color: #0844a4;
+}
+
+.contact-map {
+  float: right;
+  width: 50%;
+  height: auto;
+  margin-right: 3%;
+}
+.contact-map iframe {
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+}
+
+/* FOOTER */
+
+.contact-footer {
+  margin: 20% 0 0 45%;
+}
+.contact-footer a {
+  float: left;
+}
+.contact-footer img {
+  margin: 0 5px;
+  width: 100px;
+  height: 100px;
+}

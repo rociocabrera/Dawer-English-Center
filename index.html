@@ -4,11 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dawer English Center</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
     <link
       rel="icon"
       type="image/x-icon"
-      href="assets/images/logo-letter-d.jpeg"
+      href="assets/images/favicon-logo.png"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,54 +16,84 @@
       href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
   </head>
-  <body>
-    <header>
-      <a href="index.html">
-        <img
-          class="logo"
-          src="assets/images/logo-letter-d.jpeg"
-          alt="logo letra d"
-        />
-        <div class="slogan"><h1>Dawer English Center</h1></div>
-      </a>
-      <nav>
-        <ul>
-          <li><a href="pages/about.html">About</a></li>
-          <li>
-            <a href="pages/advantages.html">Advantages</a>
-          </li>
-          <li>
-            <a href="/pages/subscription.html">Subscription plans</a>
-          </li>
-          <li><a href="pages/contact.html">Contact</a></li>
-        </ul>
-      </nav>
+  <body class="body">
+    <header class="header">
+      <div class="header__container">
+        <div class="header__container-left">
+          <div class="header__container-logo">
+            <a href="index.html">
+              <img src="assets/images/logo-header.png" alt="logo" />
+            </a>
+          </div>
+        </div>
+        <div class="header__container-right">
+          <a href="index.html" class="item"><h1>Dawer English Center</h1></a>
+          <nav>
+            <!-- Desktop -->
+
+            <ul class="header__container-navbar">
+              <li><a href="pages/about.html" class="item">About</a></li>
+              <li>
+                <a href="pages/advantages.html">Advantages</a>
+              </li>
+              <li>
+                <a href="pages/subscription.html">Subscription plans</a>
+              </li>
+              <li><a href="pages/contact.html">Contact</a></li>
+            </ul>
+            <!-- Mobile -->
+            <div class="header__container-navbar-mobile">
+              <span><i class="bi bi-list"></i></span>
+            </div>
+          </nav>
+        </div>
+      </div>
     </header>
-    <main>
-      <h1>Boost your career</h1>
-      <h2>Invest in your future for a perfect English.</h2>
-      <p class="content">
-        If you want to work anywhere in the world this is your chance to improve
-        your English.
-      </p>
-      <div class="info">
-        <ul>
-          <li>Experienced teachers who understand your needs.</li>
-          <li>You can choose individual and/or group classes.</li>
-          <li>Free cancellation at no cost.</li>
-          <li>Classes available 24 hours.</li>
-        </ul>
-      </div>
-      <div class="image-main">
-        <aside>
-          <img src="assets/images/background-english.jpg" />
-        </aside>
-      </div>
+
+    <main class="main">
+      <section class="main__container">
+        <div class="main__container-left">
+          <div class="main__container-left-top">
+            <h1>Boost your career</h1>
+            <h2>Improve your future with a perfect English.</h2>
+            <p>
+              If you want to work anywhere in the world this is your chance to
+              improve your English.
+            </p>
+          </div>
+          <div class="main__container-left-down">
+            <ul>
+              <li>Experienced teachers who understand your needs.</li>
+              <li>You can choose individual and/or group classes.</li>
+              <li>Free cancellation at no cost.</li>
+              <li>Classes available 24 hours.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="main__container-right">
+          <img src="assets/images/students-bg.jpg" />
+        </div>
+      </section>
     </main>
-    <footer>
-      <button class="discount">10% Off</button>
-      <button class="first-month">For your first four months</button>
+
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__container-left">
+          <button>10% Off</button>
+          <button>For your first four months</button>
+        </div>
+        <div class="footer__container-right">
+          <small
+            >&copy; 2009| DAWER ENGLISH CENTER, todos los derechos
+            reservados.</small
+          >
+        </div>
+      </div>
     </footer>
   </body>
 </html>

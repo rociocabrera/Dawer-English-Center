@@ -4,11 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Advantages</title>
-    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="../styles/styles.css" />
     <link
       rel="icon"
       type="image/x-icon"
-      href="../assets/images/logo-letter-d.jpeg"
+      href="../assets/images/favicon-logo.png"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,64 +18,98 @@
     />
   </head>
   <body>
-    <header>
-      <a href="../index.html">
-        <img
-          class="logo"
-          src="../assets/images/logo-letter-d.jpeg"
-          alt="logo letra d"
-        />
-        <div class="slogan"><h1>Dawer English Center</h1></div>
-      </a>
+    <header class="header">
+      <div class="header__container">
+        <div class="header__container-left">
+          <div class="header__container-logo">
+            <a href="../index.html">
+              <img src="../assets/images/logo-header.png" alt="logo" />
+            </a>
+          </div>
+        </div>
+        <div class="header__container-right">
+          <a href="../index.html"><h1>Dawer English Center</h1></a>
+          <nav>
+            <ul>
+              <li><a href="./about.html">About</a></li>
+              <li>
+                <a href="./advantages.html">Advantages</a>
+              </li>
+              <li>
+                <a href="./subscription.html">Subscription plans</a>
+              </li>
+              <li><a href="./contact.html">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
     </header>
-    <main>
-      <h1 class="advantages-title">English Class Content</h1>
 
-      <div class="advantages-container">
-        <img
-          class="world"
-          src="../assets/images/world-advantages.jpg"
-          alt="world-advantages"
-        />
-        <p class="advantages-content">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti,
-          repudiandae provident! Eum, aperiam qui! At odit corrupti cum
-          provident, minima voluptatibus eaque rerum dolorem in distinctio? Quia
-          unde hic iusto.
-        </p>
-      </div>
-      <div class="advantages-container">
-        <img src="../assets/images/book-advantages.jpg" alt="book-advantages" />
-        <p class="advantages-content">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti,
-          repudiandae provident! Eum, aperiam qui! At odit corrupti cum
-          provident, minima voluptatibus eaque rerum dolorem in distinctio? Quia
-          unde hic iusto.
-        </p>
-      </div>
-
-      <div class="advantages-container">
-        <img
-          src="../assets/images/display-advantages.jpg"
-          alt="advantages-display"
-        />
-        <p class="advantages-content">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti,
-          repudiandae provident! Eum, aperiam qui! At odit corrupti cum
-          provident, minima voluptatibus eaque rerum dolorem in distinctio? Quia
-          unde hic iusto.
-        </p>
-      </div>
-      <div class="advantages-container">
-        <img src="../assets/images/star-advantages.jpg" alt="star-advantages" />
-        <p class="advantages-content">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio
-          deserunt mollitia maiores molestias blanditiis fugiat earum vero!
-          Officia totam animi fuga, eum veritatis quidem, consequuntur optio
-          fugit, enim iste voluptatibus!
-        </p>
+    <main class="main__advantages">
+      <div class="main__advantages-container">
+        <div class="main__advantages-container-top">
+          <h1>English Class Content</h1>
+        </div>
+        <div class="main__advantages-container-dow">
+          <div class="advantages-container-down">
+            <img
+              src="../assets/images/advantages-world.jpg"
+              alt="world-advantages"
+            />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti,
+              repudiandae provident! Eum, aperiam qui! At odit corrupti cum
+              provident, minima voluptatibus eaque rerum dolorem in distinctio?
+              Quia unde hic iusto.
+            </p>
+          </div>
+          <div class="advantages-container-down">
+            <img
+              src="../assets/images/advantages-book.jpg"
+              alt="book-advantages"
+            />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti,
+              repudiandae provident! Eum, aperiam qui! At odit corrupti cum
+              provident, minima voluptatibus eaque rerum dolorem in distinctio?
+              Quia unde hic iusto.
+            </p>
+          </div>
+          <div class="advantages-container-down">
+            <img
+              src="../assets/images/advantages-display.jpg"
+              alt="advantages-display"
+            />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti,
+              repudiandae provident! Eum, aperiam qui! At odit corrupti cum
+              provident, minima voluptatibus eaque rerum dolorem in distinctio?
+              Quia unde hic iusto.
+            </p>
+          </div>
+          <div class="advantages-container-down">
+            <img
+              src="../assets/images/advantages-star.jpg"
+              alt="star-advantages"
+            />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Distinctio deserunt mollitia maiores molestias blanditiis fugiat
+              earum vero! Officia totam animi fuga, eum veritatis quidem,
+              consequuntur optio fugit, enim iste voluptatibus!
+            </p>
+          </div>
+        </div>
       </div>
     </main>
-    <footer><button class="advantages-button">Button</button></footer>
+
+    <footer class="footer__advantages">
+      <div class="footer__container-advantages">
+        <small
+          >&copy; 2009| DAWER ENGLISH CENTER, todos los derechos
+          reservados.</small
+        >
+      </div>
+    </footer>
   </body>
 </html>

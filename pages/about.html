@@ -4,11 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About</title>
-    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="../styles/styles.css" />
     <link
       rel="icon"
       type="image/x-icon"
-      href="../assets/images/logo-letter-d.jpeg"
+      href="../assets/images/favicon-logo.png"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,47 +18,81 @@
     />
   </head>
   <body>
-    <header>
-      <a href="../index.html">
-        <img
-          class="logo"
-          src="../assets/images/logo-letter-d.jpeg"
-          alt="logo letra d"
-        />
-        <div class="slogan"><h1>Dawer English Center</h1></div>
-      </a>
+    <header class="header">
+      <div class="header__container">
+        <div class="header__container-left">
+          <div class="header__container-logo">
+            <a href="../index.html">
+              <img src="../assets/images/logo-header.png" alt="logo" />
+            </a>
+          </div>
+        </div>
+        <div class="header__container-right">
+          <a href="../index.html"><h1>Dawer English Center</h1></a>
+          <nav>
+            <ul>
+              <li><a href="./about.html">About</a></li>
+              <li>
+                <a href="./advantages.html">Advantages</a>
+              </li>
+              <li>
+                <a href="./subscription.html">Subscription plans</a>
+              </li>
+              <li><a href="./contact.html">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
     </header>
-    <main>
-      <div class="me-presentation">
-        <h3 class="hello">Hello</h3>
-        <h2 class="title">I'm Rocío</h2>
-        <p class="content-about">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti,
-          repudiandae provident! Eum, aperiam qui! At odit corrupti cum
-          provident, minima voluptatibus eaque rerum dolorem in distinctio? Quia
-          unde hic iusto.
-        </p>
-        <button class="button-about">More about me</button>
-      </div>
 
-      <div class="picture-me">
-        <img src="../assets/images/about-teacher.jpg" alt="About me" />
-      </div>
-
-      <div class="about-me">
-        <h3 class="experience">Expertise</h3>
-        <p class="content-about">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit,
-          maxime culpa cumque quis possimus soluta ratione? Temporibus labore
-          libero nesciunt, tempore distinctio ipsa reiciendis cupiditate
-          consectetur omnis totam nemo exercitationem!
-        </p>
-        <button class="button-about">Download CV</button>
-      </div>
-      <div class="picture-about-me">
-        <img src="../assets/images/students-background.jpg" alt="" />
+    <main class="main">
+      <div class="main__container-about">
+        <div class="main__container-about--top-left">
+          <h3>Hello!</h3>
+          <h2>I'm Adrián Gimenez</h2>
+          <p>
+            More than twenty years of experience endorse our commitment to
+            teaching English. Our graduates are testimony to the quality of our
+            courses. Learn from the comfort of your home. Real-time classes
+            feeling the experience of a classroom enriched with digital tools.
+            We accelerate the process of language acquisition through online
+            English courses with 100% personalized live classes.
+          </p>
+          <button>More about me</button>
+        </div>
+        <div class="main__container-about--top-right">
+          <img
+            src="../assets/images/students.jpg"
+            alt="background-about-students"
+          />
+        </div>
+        <div class="main__container-about--down-left">
+          <img src="../assets/images/teacher.jpg" alt="" />
+        </div>
+        <div class="main__container-about--down-right">
+          <h3>Expertise</h3>
+          <p>
+            Our classes are taught by certified teachers in real-time through a
+            virtual classroom enriched with authentic digital support content.
+            We use an innovative pedagogical model focused on communication in
+            which the protagonist of the learning process is the student. With
+            all this, we achieve language learning up to 4 times faster than in
+            traditional classes. In addition, you can review the recording of
+            your class and have access to digital support content at no
+            additional cost.
+          </p>
+          <button>Download CV</button>
+        </div>
       </div>
     </main>
-    <footer class="footer-about"><hr /></footer>
+
+    <footer class="footer__about">
+      <div class="footer__container-about">
+        <small
+          >&copy; 2009| DAWER ENGLISH CENTER, todos los derechos
+          reservados.</small
+        >
+      </div>
+    </footer>
   </body>
 </html>

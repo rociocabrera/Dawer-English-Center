@@ -7,9 +7,9 @@
     <link
       rel="icon"
       type="image/x-icon"
-      href="../assets/images/logo-letter-d.jpeg"
+      href="../assets/images/favicon-logo.png"
     />
-    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="../styles/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -18,18 +18,35 @@
     />
   </head>
   <body>
-    <header>
-      <a href="../index.html">
-        <img
-          class="logo"
-          src="../assets/images/logo-letter-d.jpeg"
-          alt="logo letra d"
-        />
-        <div class="slogan"><h1>Dawer English Center</h1></div>
-      </a>
+    <header class="header">
+      <div class="header__container">
+        <div class="header__container-left">
+          <div class="header__container-logo">
+            <a href="../index.html">
+              <img src="../assets/images/logo-header.png" alt="logo" />
+            </a>
+          </div>
+        </div>
+        <div class="header__container-right">
+          <a href="../index.html"><h1>Dawer English Center</h1></a>
+          <nav>
+            <ul>
+              <li><a href="./about.html">About</a></li>
+              <li>
+                <a href="./advantages.html">Advantages</a>
+              </li>
+              <li>
+                <a href="./subscription.html">Subscription plans</a>
+              </li>
+              <li><a href="./contact.html">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
     </header>
+
     <main class="contact">
-      <h1 class="title-contact">if you have any question</h1>
+      <h1 class="title-contact">if you have any question..</h1>
       <hr class="contact-line" />
       <div class="general-content">
         <div class="contact-content">
@@ -71,7 +88,7 @@
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
-          <h2>We are over here</h2>
+          <h2>We are on social media too!</h2>
           <hr class="contact-line" />
         </div>
       </div>

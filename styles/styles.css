@@ -7,7 +7,7 @@
 }
 @font-face {
   font-family: Tabel;
-  src: url(./assets/ttf/TebelSans-Regular.ttf) format("truetype");
+  src: url(../assets/ttf/TebelSans-Regular.ttf) format("truetype");
   font-weight: normal;
 }
 
@@ -58,6 +58,7 @@ p {
 }
 
 .header__container-right h1 {
+  padding-left: 40px;
   font-family: Plus Jakarta Sans;
   text-transform: uppercase;
   color: #f7f6f6;
@@ -402,25 +403,17 @@ h2 {
   padding: 10px;
 }
 
-/* ORDENAR */
-.subscription-button,
-.plan-button {
-  font-size: 15px;
-  margin: 10px;
-  padding: 15px;
-  border-radius: 5px;
-  border: #a0e4cbcd;
-  font-family: Plus Jakarta Sans;
-  color: #0844a4;
-}
-
-/* MAIN SUBCRIPTION */
-.main__subscription {
-  display: flex;
-  flex-direction: column;
+/* MAIN SUBSCRIPTION */
+.container {
   max-width: 1200px;
   margin: 0 auto;
 }
+.card {
+  margin: 10px;
+  width: 30%;
+  height: 300px;
+}
+
 .main__subscription-title {
   width: 500px;
   padding: 5px 20px;
@@ -431,15 +424,15 @@ h2 {
   box-shadow: 1px 5px 5px rgb(10, 133, 228);
   border-radius: 10px;
 }
-.main__subscription-container {
+/* .main__subscription-container {
   display: flex;
   flex-direction: row;
-}
+} */
 .subscription-button {
-  width: 100%;
+  width: 30%;
   height: auto;
 }
-.subscription-silver {
+/* .subscription-silver {
   background: linear-gradient(#e78989, #747ab7);
 }
 .silver-title,
@@ -453,8 +446,8 @@ h2 {
 }
 .subscription-platinum {
   background: linear-gradient(#59c1bd, #e28da3);
-}
-.subscription-silver,
+} */
+/* .subscription-silver,
 .subscription-gold,
 .subscription-platinum {
   margin: 20px 15px;
@@ -464,8 +457,8 @@ h2 {
   float: left;
   box-sizing: border-box;
   padding: 0 15px;
-}
-.subscription-content {
+} */
+/* .subscription-content {
   text-align: justify;
   margin: 20px 50px;
   font-family: Tabel;
@@ -477,7 +470,20 @@ h2 {
 }
 .subscription-container::after {
   display: table;
+} */
+
+/* ORDENAR */
+.subscription-button,
+.plan-button {
+  font-size: 15px;
+  margin: 10px;
+  padding: 15px;
+  border-radius: 5px;
+  border: #a0e4cbcd;
+  font-family: Plus Jakarta Sans;
+  color: #0844a4;
 }
+
 /* MAIN CONTACT */
 
 .general-content {
@@ -594,9 +600,10 @@ textarea::placeholder {
   object-fit: cover;
 }
 
-/* Media Queries */
-
-/* @media (min-width: 768px) {
+/* Media Queries
+@media (min-width: 375px) {
+}
+@media (min-width: 768px) {
 }
 @media (min-width: 992px) {
 } */

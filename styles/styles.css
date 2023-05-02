@@ -186,7 +186,7 @@ p {
   display: flex;
   flex-direction: column;
   width: 100%;
-  margin-top: 5%;
+  margin-bottom: 50px;
   justify-content: space-between;
 }
 
@@ -354,15 +354,13 @@ h2 {
   flex-direction: column;
 }
 .main__advantages-container-top {
-  display: flex;
+  display: block;
   justify-content: start;
-  margin-bottom: 15px;
 }
 .main__advantages-container-top h1 {
-  width: 500px;
+  font-size: 20px;
   padding: 5px 20px;
   margin: 15px;
-  font-size: 40px;
   font-weight: bold;
   color: #0844a4;
   box-shadow: 1px 5px 5px rgb(10, 133, 228);
@@ -370,11 +368,9 @@ h2 {
 }
 
 .main__advantages-container-dow {
-  display: grid;
+  display: block;
   max-width: 1200px;
-  grid-template-columns: repeat(2, 2fr);
-  gap: 10px;
-  margin-top: 10px;
+  margin-top: 0px;
 }
 .advantages-container-down {
   display: flex;
@@ -385,7 +381,7 @@ h2 {
 }
 .advantages-container-down img {
   justify-content: center;
-  max-width: 150px;
+  max-width: 80px;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
   object-fit: cover;
@@ -399,19 +395,21 @@ h2 {
   color: #0844a4;
   margin: 10px 20px;
 }
+/*FOOTER ADVANTAGES */
 
 .footer__advantages {
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
-  height: 50px;
   align-items: end;
-  justify-content: end;
+  justify-content: center;
+  margin-bottom: 60px;
 }
 
 .footer__container-advantages small {
   color: #0844a4;
   padding: 10px;
+  font-size: 11px;
 }
 
 /* MAIN SUBSCRIPTION */
@@ -696,6 +694,7 @@ textarea::placeholder {
   /* FOOTER INDEX*/
   .footer__container {
     flex-direction: row;
+    margin-top: 50px;
   }
   .footer__container-right {
     font-size: 14px;
@@ -743,6 +742,36 @@ textarea::placeholder {
     justify-content: end;
   }
   .footer__container-about small {
+    font-size: 12px;
+  }
+  /* MAIN ADVANTAGES */
+  .main__advantages-container-top {
+    display: flex;
+    margin-bottom: 15px;
+  }
+  .main__advantages-container-top h1 {
+    width: 500px;
+    font-size: 40px;
+  }
+  .main__advantages-container-dow {
+    display: grid;
+    max-width: 1200px;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 10px;
+    margin-top: 10px;
+  }
+  .advantages-container-down img {
+    justify-content: center;
+    max-width: 150px;
+  }
+  /* FOOTER ADVANTAGES */
+
+  .footer__advantages {
+    justify-content: end;
+    height: 50px;
+    margin-bottom: 0px;
+  }
+  .footer__container-advantages small {
     font-size: 12px;
   }
 }

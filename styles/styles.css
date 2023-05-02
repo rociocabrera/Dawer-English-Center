@@ -64,7 +64,9 @@ p {
 .header__container-right .header__container-navbar {
   display: none;
 }
-
+.bg-body-tertiary {
+  --bs-bg-opacity: 0;
+}
 .navbar-brand {
   color: white;
   margin-left: auto;
@@ -90,13 +92,12 @@ p {
 .nav-link {
   color: white;
 }
-
-.nav-link:hover {
+.navbar-nav .nav-link.active {
   color: orange;
+  text-decoration: underline;
 }
 
 .header__container-navbar-mobile {
-  background: linear-gradient(90deg, rgb(5, 60, 149) 42%, rgb(71, 129, 230) 71%);
   display: flex;
   flex-direction: column;
   padding-right: 10px;
@@ -145,7 +146,7 @@ p {
   line-height: 1;
 }
 .main__container-left-top p {
-  margin-top: 10px;
+  margin-top: 30px;
   font-size: 20px;
   color: #0844a4;
 }
@@ -161,7 +162,7 @@ p {
 
 .main__container-left-down ul li {
   list-style: none;
-  font-size: 20px;
+  font-size: 16px;
   color: #0844a4;
   text-shadow: 1px 0px #9ab8e9;
 }
@@ -669,6 +670,10 @@ textarea::placeholder {
   .main__container-left-top p {
     margin-top: 40px;
   }
+  .main__container-left-down ul li {
+    font-size: 20px;
+  }
+
   .main__container-right img {
     display: inline;
     width: 600px;

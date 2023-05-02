@@ -334,7 +334,7 @@ h2 {
   display: flex;
   align-items: end;
   justify-content: center;
-  margin-top: 10px;
+  margin-bottom: 50px;
 }
 .footer__container-about small {
   color: #0844a4;
@@ -740,6 +740,7 @@ textarea::placeholder {
   /* FOOTER ABOUT */
   .footer__about {
     justify-content: end;
+    margin-top: 10px;
   }
   .footer__container-about small {
     font-size: 12px;

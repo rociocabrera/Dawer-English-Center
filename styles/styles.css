@@ -419,7 +419,9 @@ h2 {
   max-width: 1200px;
   margin: 0 auto;
 }
-
+.row {
+  margin-right: 0;
+}
 .card {
   margin: 7px;
   width: 360px;

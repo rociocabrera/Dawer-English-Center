@@ -419,9 +419,7 @@ h2 {
   max-width: 1200px;
   margin: 0 auto;
 }
-.row {
-  margin-right: 0;
-}
+
 .card {
   margin: 7px;
   width: 360px;
@@ -436,9 +434,6 @@ h2 {
   color: #0844a4;
   box-shadow: 1px 5px 5px rgb(10, 133, 228);
   border-radius: 10px;
-}
-.alert {
-  width: 360px;
 }
 
 .contact::before {

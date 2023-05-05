@@ -193,7 +193,7 @@ p {
 .footer__container-left {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  margin-left: 25px;
 }
 .footer__container-left button:hover {
   color: rgb(242, 237, 236);

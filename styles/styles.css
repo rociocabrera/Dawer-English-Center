@@ -334,7 +334,7 @@ h2 {
   display: flex;
   align-items: end;
   justify-content: center;
-  margin-bottom: 60px;
+  margin-bottom: 20px;
 }
 .footer__container-about small {
   color: #0844a4;
@@ -395,7 +395,6 @@ h2 {
 .advantages-container-down p {
   color: #0844a4;
   margin: 5px 10px;
-  font-size: 12px;
 }
 /*FOOTER ADVANTAGES */
 
@@ -405,7 +404,7 @@ h2 {
   display: flex;
   align-items: end;
   justify-content: center;
-  margin-bottom: 60px;
+  margin-bottom: 20px;
 }
 
 .footer__container-advantages small {

@@ -424,13 +424,8 @@ h2 {
   box-shadow: 6px 15px 13px 1px rgba(171, 182, 185, 0.3) !important;
 }
 .main__subscription-title {
-  padding: 5px 20px;
-  margin: 0;
-  font-size: 20px;
-  font-weight: bold;
   color: #0844a4;
   box-shadow: 1px 5px 5px rgb(10, 133, 228);
-  border-radius: 10px;
 }
 .row {
   margin: 0;
@@ -744,22 +739,18 @@ textarea::placeholder {
   }
   /* MAIN SUBSCRIPTION */
 
-  .main__subscription-title {
+  /* .main__subscription-title {
     font-size: 40px;
     margin: 10px 10px;
     width: 500px;
     margin: 15px;
-  }
+  } */
   .card .price:hover {
     color: #0844a4;
   }
   .alert a:hover {
     background-color: yellow;
     border-radius: 3px;
-  }
-
-  .alert {
-    width: 1100px !important;
   }
 
   /* FOOTER SUBSCRIPTION */

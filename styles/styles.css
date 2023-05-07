@@ -36,7 +36,7 @@ p {
   display: flex;
   max-width: 1200px;
   margin: 0 auto;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .header__container-left {
@@ -183,7 +183,7 @@ p {
   margin: 0 auto;
 }
 .footer__container {
-  display: flex;
+  display: inline-block;
   flex-direction: column;
   width: 100%;
   margin-bottom: 20px;
@@ -193,7 +193,7 @@ p {
 .footer__container-left {
   display: flex;
   flex-direction: row;
-  margin-left: 25px;
+  justify-content: center;
 }
 .footer__container-left button:hover {
   color: rgb(242, 237, 236);
@@ -568,14 +568,18 @@ textarea::placeholder {
   .header__container {
     justify-content: space-between;
   }
+  .footer__container-left {
+    margin-left: 25px;
+  }
 
   .header__container-logo img {
     width: 100px;
     height: 100px;
   }
   .header__container-right {
-    justify-content: end;
+    margin-top: 10px;
   }
+
   .header__container-right h1 {
     display: block;
     font-size: 40px;
@@ -618,8 +622,12 @@ textarea::placeholder {
   /* MAIN INDEX*/
   .main__container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
   }
+  .main__container-left {
+    margin: 10px 25px;
+  }
+
   .main__container-left-top p {
     margin-top: 40px;
   }
@@ -628,13 +636,14 @@ textarea::placeholder {
   }
 
   .main__container-right img {
-    display: inline;
-    width: 600px;
-    border-radius: 10px;
+    display: flex;
+    margin-left: 25px;
+    padding: 0;
+    width: 90%;
+    border-radius: 20px;
     margin-top: 20px;
     box-shadow: 10px 5px 5px rgb(181, 180, 180);
     object-fit: cover;
-    padding: 0px;
   }
 
   .header__container-navbar-mobile {
@@ -643,11 +652,14 @@ textarea::placeholder {
   /* FOOTER INDEX*/
   .footer__container {
     flex-direction: row;
-    margin-top: 50px;
+    margin-top: 20px;
   }
   .footer__container-right {
     font-size: 14px;
-    justify-content: end;
+    justify-content: center;
+  }
+  .footer__container-left {
+    margin-left: 0;
   }
   /* MAIN ABOUT */
   .main__container-about {
@@ -750,6 +762,33 @@ textarea::placeholder {
 }
 /* MEDIA QUERY 992 */
 @media (min-width: 992px) {
+  /* INDEX */
+  .main__container {
+    display: flex;
+    flex-direction: row;
+  }
+  .main__container-left {
+    margin: 10px 25px;
+  }
+  .main__container-right {
+    margin-right: 50px;
+  }
+  .main__container-right img {
+    width: 800px;
+    margin-right: 30px;
+    margin-top: 10px;
+  }
+  .footer__container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+  }
+  .footer__container-left {
+    margin-left: 25px;
+  }
+
+  /* ABOUT */
+
   .main__container-about {
     display: grid;
     grid-template-columns: repeat(2, 2fr);

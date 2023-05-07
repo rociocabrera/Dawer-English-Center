@@ -818,7 +818,7 @@ textarea::placeholder {
   .main__container-about--down-left img,
   .main__container-about--top-right img {
     display: grid;
-    width: 500px;
+    width: 450px;
     margin-left: 10px;
     border-radius: 20px;
     box-shadow: 10px 5px 5px rgb(181, 180, 180);

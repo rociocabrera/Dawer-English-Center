@@ -414,10 +414,6 @@ h2 {
 }
 
 /* MAIN SUBSCRIPTION */
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
 
 .card {
   box-shadow: 6px 15px 13px 1px rgba(171, 182, 185, 0.3) !important;
@@ -426,9 +422,7 @@ h2 {
   color: #0844a4;
   box-shadow: 1px 5px 5px rgb(10, 133, 228);
 }
-.row {
-  margin: 0;
-}
+
 .contact::before {
   content: "«";
   color: #7f83b6;
@@ -658,43 +652,42 @@ textarea::placeholder {
   /* MAIN ABOUT */
   .main__container-about {
     display: grid;
-    grid-template-columns: repeat(2, 2fr);
+    grid-template-columns: repeat(1, 4fr);
     margin-top: 10px;
-    margin: 0;
-    gap: 20px;
   }
   .main__container-about--top-left {
-    margin-top: 25px;
+    margin-top: 10px;
+    margin-left: 10px;
   }
   .main__container-about--top-left p {
     padding-top: 20px;
   }
   .main__container-about--top-left button {
-    width: 30%;
-    margin: 15px 0;
+    margin: 15px 50px;
     padding: 10px;
   }
   .main__container-about--top-right img {
-    width: 450px;
+    width: 700px;
+    margin-left: 10px;
   }
   .main__container-about--down-left img {
+    display: none;
+  }
+  .main__container-about--down-right button {
+    margin: 15px 50px;
+    padding: 10px;
+  }
+  .main__container-about--mobile {
     display: grid;
-    width: 450px;
+    width: 700px;
+    margin-left: 10px;
     border-radius: 20px;
     box-shadow: 10px 5px 5px rgb(181, 180, 180);
     object-fit: cover;
   }
-  .main__container-about--down-right button {
-    width: 30%;
-    margin: 15px 10px;
-    padding: 10px;
-  }
-  .main__container-about--mobile {
-    display: none;
-  }
   /* FOOTER ABOUT */
   .footer__about {
-    justify-content: end;
+    justify-content: center;
     margin-top: 10px;
   }
   .footer__container-about small {
@@ -703,7 +696,7 @@ textarea::placeholder {
   /* MAIN ADVANTAGES */
   .main__advantages-container-top {
     display: flex;
-    margin-bottom: 15px;
+    justify-content: center;
   }
   .main__advantages-container-top h1 {
     width: 500px;
@@ -712,9 +705,7 @@ textarea::placeholder {
   .main__advantages-container-dow {
     display: grid;
     max-width: 1200px;
-    grid-template-columns: repeat(2, 2fr);
-    gap: 10px;
-    margin-top: 10px;
+    grid-template-columns: repeat(1, 2fr);
   }
   .advantages-container-down p {
     color: #0844a4;
@@ -729,21 +720,14 @@ textarea::placeholder {
   /* FOOTER ADVANTAGES */
 
   .footer__advantages {
-    justify-content: end;
-    height: 50px;
-    margin-bottom: 0px;
+    justify-content: center;
+    margin-bottom: 20px;
   }
   .footer__container-advantages small {
     font-size: 12px;
   }
   /* MAIN SUBSCRIPTION */
 
-  /* .main__subscription-title {
-    font-size: 40px;
-    margin: 10px 10px;
-    width: 500px;
-    margin: 15px;
-  } */
   .card .price:hover {
     color: #0844a4;
   }
@@ -764,6 +748,44 @@ textarea::placeholder {
     font-size: 12px;
   }
 }
-
+/* MEDIA QUERY 992 */
 @media (min-width: 992px) {
+  .main__container-about {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    margin-top: 10px;
+    gap: 20px;
+  }
+
+  .main__advantages-container-top {
+    display: flex;
+    justify-content: start;
+  }
+
+  .main__advantages-container-dow {
+    display: grid;
+    max-width: 1200px;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 10px;
+    margin-top: 10px;
+  }
+  .main__container-about--down-right button,
+  .main__container-about--top-left button {
+    width: 30%;
+    margin: 15px 0px;
+    padding: 10px;
+  }
+
+  .main__container-about--down-left img,
+  .main__container-about--top-right img {
+    display: grid;
+    width: 500px;
+    margin-left: 10px;
+    border-radius: 20px;
+    box-shadow: 10px 5px 5px rgb(181, 180, 180);
+    object-fit: cover;
+  }
+  .main__container-about--mobile {
+    display: none;
+  }
 }

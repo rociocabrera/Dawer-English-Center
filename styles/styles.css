@@ -491,7 +491,7 @@ input[type="email"],
 input[type="number"] {
   padding-left: 5px;
   margin-bottom: 10px;
-  width: 320px;
+  width: 350px;
 }
 form input {
   width: 230px;
@@ -535,7 +535,7 @@ textarea::placeholder {
 .contact__form-button {
   display: flex;
   flex-direction: row;
-  justify-content: end;
+  justify-content: center;
 }
 .form button {
   margin: 10px 5px;
@@ -926,6 +926,9 @@ textarea::placeholder {
   }
   .contact-map iframe {
     width: 900px;
+  }
+  .contact__form-button {
+    justify-content: end;
   }
   /* FOOTER CONTACT */
   .contact__footer {

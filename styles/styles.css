@@ -474,8 +474,9 @@ h2 {
   text-align: justify;
 }
 
-.form-info p {
-  font-size: 16px;
+.form-info p,
+.info__form-details {
+  font-size: 12px;
   text-align: justify;
   font-weight: lighter;
   color: #0844a4;
@@ -797,6 +798,10 @@ textarea::placeholder {
     font-size: 30px;
     margin: 5px 30px;
   }
+  .form-info p,
+  .info__form-details {
+    font-size: 16px;
+  }
   .general-content {
     align-items: start;
     margin: 5px 20px;
@@ -904,6 +909,10 @@ textarea::placeholder {
   .title-contact {
     font-size: 40px;
     margin: 5px 20px;
+  }
+  .form-info p,
+  .info__form-details {
+    font-size: 16px;
   }
   .general-content {
     align-items: start;

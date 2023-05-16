@@ -359,7 +359,7 @@ footer {
 .main__advantages-container-top h1 {
   font-size: 20px;
   padding: 10px 20px;
-  margin: 0 20px;
+  margin: 0 10px;
   font-weight: bold;
   color: #0844a4;
   box-shadow: 1px 5px 5px rgb(10, 133, 228);
@@ -724,6 +724,7 @@ textarea::placeholder {
     font-size: 40px;
     padding: 5px 20px;
     margin: 15px;
+    font-weight: lighter;
   }
   .main__advantages-container-dow {
     display: grid;
@@ -825,7 +826,7 @@ textarea::placeholder {
   .main__container-about--top-left h3,
   .main__container-about--top-left h2,
   .main__container-about--down-right h3 {
-    font-size: 26px;
+    font-size: 40px;
   }
 
   .main__container-about--top-left p,
@@ -893,7 +894,11 @@ textarea::placeholder {
     display: none;
   }
 
-  /*MAIN ADVANTAGES */
+  /* MAIN ADVANTAGES */
+
+  .main__advantages-container-top h1 {
+    font-weight: lighter;
+  }
   .advantages-container-info h2 {
     margin: 10px;
   }

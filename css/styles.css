@@ -184,11 +184,12 @@ p {
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin: 15px;
+  margin: 10px;
 }
 
 .main__container-right img {
   width: 100%;
+  height: 100%;
   border-radius: 5px;
   box-shadow: 10px 5px 5px rgb(181, 180, 180);
   object-fit: cover;
@@ -246,8 +247,7 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 10px;
-  margin: 5px 20px;
+  margin: 10px;
 }
 
 .main__container-about--top-left {
@@ -289,35 +289,25 @@ h2 {
   box-shadow: 10px 5px 5px 10, 133, 228;
 }
 
-.main__container-about--top-right {
-  background-image: url(../assets/images/students.jpg);
-  background-repeat: no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-position: center;
-  box-shadow: 10px 10px 10px rgb(181, 180, 180);
-  object-fit: cover;
+.main__container-about--top-right img {
+  width: 100%;
   border-radius: 5px;
+  box-shadow: 10px 5px 5px rgb(181, 180, 180);
+  object-fit: cover;
 }
 
-.main__container-about--down-left {
-  background-image: url(../assets/images/teacher.jpg);
-  background-repeat: no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-position: top;
-  box-shadow: 10px 10px 10px rgb(181, 180, 180);
-  object-fit: cover;
-  border-radius: 5px;
+.main__container-about--down-left img {
+  display: none;
+}
+
+.main__container-about--top-right,
+.main__container-about--mobile {
+  margin-top: 10px;
 }
 
 .main__container-about--mobile img {
   width: 100%;
-  border-radius: 20px;
+  border-radius: 5px;
   box-shadow: 10px 5px 5px rgb(181, 180, 180);
   object-fit: cover;
 }
@@ -717,24 +707,21 @@ textarea::placeholder {
   }
   /* MAIN ABOUT */
   .main__container-about {
-    display: grid;
-    grid-template-columns: repeat(1, 4fr);
-    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
   }
   .main__container-about--top-left {
     margin-top: 10px;
-    margin-left: 10px;
   }
   .main__container-about--top-left p {
-    padding-top: 20px;
+    font-size: 20px;
   }
   .main__container-about--top-left button {
     margin: 15px 50px;
     padding: 10px;
   }
   .main__container-about--top-right img {
-    width: 700px;
-    margin-left: 10px;
+    width: 100%;
   }
   .main__container-about--down-left img {
     display: none;
@@ -745,8 +732,7 @@ textarea::placeholder {
   }
   .main__container-about--mobile {
     display: grid;
-    width: 700px;
-    margin-left: 10px;
+    width: 100%;
     border-radius: 20px;
     box-shadow: 10px 5px 5px rgb(181, 180, 180);
     object-fit: cover;
@@ -852,6 +838,15 @@ textarea::placeholder {
     flex-direction: row;
     max-width: 1200px;
   }
+  .main__container-about--top-left h3,
+  h2,
+  .main__container-about--down-right h3 {
+    font-size: 26px;
+  }
+  .main__container-about--top-left p,
+  .main__container-about--down-right p {
+    font-size: 18px;
+  }
   .main__container-left {
     margin: 10px;
     width: 50%;
@@ -887,16 +882,19 @@ textarea::placeholder {
   }
   .main__container-about--down-right button,
   .main__container-about--top-left button {
-    width: 30%;
-    margin: 15px 0px;
+    width: 40%;
+    margin: 20px 0px;
     padding: 10px;
+  }
+  .main__container-about--top-right {
+    margin-top: 0px;
   }
   .main__container-about--down-left img,
   .main__container-about--top-right img {
     display: grid;
-    width: 450px;
-    margin-left: 10px;
-    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
     box-shadow: 10px 5px 5px rgb(181, 180, 180);
     object-fit: cover;
   }

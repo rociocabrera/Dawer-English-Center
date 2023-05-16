@@ -238,7 +238,7 @@ footer {
 }
 
 .main__container-about--top-left h3,
-h2 {
+.main__container-about--top-left h2 {
   font-size: 20px;
   font-weight: lighter;
   color: #0844a4;
@@ -374,9 +374,16 @@ h2 {
 .advantages-container-down {
   display: flex;
   flex-direction: row;
-  margin: 15px;
+  margin: 10px;
   box-shadow: 5px 5px 5px rgb(208, 213, 249);
   border-radius: 10px;
+}
+.advantages-container-info h2 {
+  font-size: 20px;
+  font-weight: lighter;
+  color: #0844a4;
+  margin: 10px;
+  font-weight: bold;
 }
 .advantages-container-down img {
   width: 80px;
@@ -591,8 +598,6 @@ textarea::placeholder {
 
 /* Media Queries */
 
-@media (min-width: 375px) {
-}
 @media (min-width: 768px) {
   /* header index */
 
@@ -725,11 +730,14 @@ textarea::placeholder {
     max-width: 1200px;
     grid-template-columns: repeat(1, 2fr);
   }
+  .advantages-container-info h2 {
+    margin: 0 10px;
+  }
   .advantages-container-down p {
     color: #0844a4;
-    margin: 10px 20px;
     font-size: 16px;
   }
+
   .advantages-container-down img {
     width: 150px;
     height: 150px;
@@ -815,7 +823,7 @@ textarea::placeholder {
     max-width: 1200px;
   }
   .main__container-about--top-left h3,
-  h2,
+  .main__container-about--top-left h2,
   .main__container-about--down-right h3 {
     font-size: 26px;
   }
@@ -883,6 +891,11 @@ textarea::placeholder {
   }
   .main__container-about--mobile {
     display: none;
+  }
+
+  /*MAIN ADVANTAGES */
+  .advantages-container-info h2 {
+    margin: 10px;
   }
   /* MAIN CONTACT */
 

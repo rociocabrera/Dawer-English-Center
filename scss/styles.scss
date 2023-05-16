@@ -174,7 +174,7 @@ p {
 }
 .main__container-right img {
   width: 100%;
-  border-radius: 10px;
+  border-radius: 5px;
   box-shadow: 10px 5px 5px rgb(181, 180, 180);
   object-fit: cover;
 }
@@ -838,13 +838,18 @@ textarea::placeholder {
   .main__container {
     display: flex;
     flex-direction: row;
+    max-width: 1200px;
   }
   .main__container-left {
     margin: 10px;
+    width: 50%;
   }
   .main__container-left-down {
     display: flex;
     flex-direction: column;
+  }
+  .main__container-right {
+    width: 50%;
   }
 
   /* FOOTER INDEX */

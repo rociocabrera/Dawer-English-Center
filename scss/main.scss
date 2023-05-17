@@ -119,11 +119,6 @@ p {
 
 /* FOOTER INDEX*/
 
-footer {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
 .buton__container-index {
   display: flex;
   flex-direction: row;
@@ -145,17 +140,6 @@ footer {
   background-color: #0844a4;
   border-radius: 10px;
   box-shadow: 5px 5px 5px rgb(181, 180, 180);
-}
-
-.footer__index {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: start;
-  font-size: 12px;
-}
-.footer__index small {
-  color: #0844a4;
 }
 
 /* MAIN ABOUT */
@@ -262,22 +246,6 @@ footer {
   box-shadow: 10px 5px 5px rgb(181, 180, 180);
 }
 
-/*FOOTER ABOUT */
-.footer__about {
-  max-width: 1200px;
-  height: auto;
-  margin: 0 auto;
-  display: flex;
-  align-items: end;
-  justify-content: center;
-  margin-bottom: 20px;
-}
-.footer__container-about small {
-  color: #0844a4;
-  padding: 10px;
-  font-size: 11px;
-}
-
 /* MAIN ADVANTAGES */
 
 .main__advantages {
@@ -338,22 +306,6 @@ footer {
   color: #0844a4;
   margin: 5px 10px;
 }
-/*FOOTER ADVANTAGES */
-
-.footer__advantages {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  align-items: end;
-  justify-content: center;
-  margin-bottom: 20px;
-}
-
-.footer__container-advantages small {
-  color: #0844a4;
-  padding: 10px;
-  font-size: 11px;
-}
 
 /* MAIN SUBSCRIPTION */
 
@@ -374,16 +326,6 @@ footer {
   color: #7f83b6;
 }
 
-.subscription__footer {
-  display: flex;
-  margin: 0 auto;
-  justify-content: center;
-  color: #0844a4;
-}
-
-.subscription__footer small {
-  font-size: 11px;
-}
 /* MAIN CONTACT */
 .main__contact {
   display: flex;
@@ -544,14 +486,6 @@ textarea::placeholder {
   object-fit: cover;
   border-radius: 50%;
 }
-/* FOOTER */
-.contact__footer {
-  display: flex;
-  justify-content: center;
-  font-size: 11px;
-  color: #0844a4;
-  margin-bottom: 20px;
-}
 
 /* Media Queries */
 
@@ -571,12 +505,6 @@ textarea::placeholder {
 
   .main__container-right {
     display: block;
-  }
-
-  /* FOOTER INDEX*/
-  .footer__index {
-    flex-direction: row;
-    justify-content: space-around;
   }
 
   /* MAIN ABOUT */
@@ -611,14 +539,7 @@ textarea::placeholder {
     box-shadow: 10px 5px 5px rgb(181, 180, 180);
     object-fit: cover;
   }
-  /* FOOTER ABOUT */
-  .footer__about {
-    justify-content: center;
-    margin-top: 10px;
-  }
-  .footer__container-about small {
-    font-size: 12px;
-  }
+
   /* MAIN ADVANTAGES */
 
   .main__advantages-container-top h1 {
@@ -646,15 +567,7 @@ textarea::placeholder {
     margin-top: 0px;
     border-radius: 5px;
   }
-  /* FOOTER ADVANTAGES */
 
-  .footer__advantages {
-    justify-content: center;
-    margin-bottom: 20px;
-  }
-  .footer__container-advantages small {
-    font-size: 12px;
-  }
   /* MAIN SUBSCRIPTION */
 
   .card .price:hover {
@@ -663,18 +576,6 @@ textarea::placeholder {
   .alert a:hover {
     background-color: yellow;
     border-radius: 3px;
-  }
-
-  /* FOOTER SUBSCRIPTION */
-
-  .subscription__footer {
-    max-width: 1200px;
-    justify-content: center;
-    height: 50px;
-    margin-bottom: 0px;
-  }
-  .subscription__footer small {
-    font-size: 12px;
   }
 
   /* MAIN CONTACT */
@@ -719,10 +620,6 @@ textarea::placeholder {
     margin: 10px 0px;
     align-items: center;
   }
-  /* FOOTER CONTACT */
-  .contact__footer {
-    font-size: 12px;
-  }
 }
 /* MEDIA QUERY 992 */
 @media (min-width: 992px) {
@@ -753,15 +650,6 @@ textarea::placeholder {
   }
   .main__container-right {
     width: 50%;
-  }
-
-  /* FOOTER INDEX */
-  .footer__index {
-    max-width: 1200px;
-    justify-content: space-between;
-  }
-  .footer__index small {
-    padding-right: 10px;
   }
 
   /* ABOUT */
@@ -856,8 +744,5 @@ textarea::placeholder {
   .contact__form-button {
     justify-content: start;
   }
-  /* FOOTER CONTACT */
-  .contact__footer {
-    font-size: 12px;
-  }
+
 }

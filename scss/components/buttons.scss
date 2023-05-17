@@ -1,0 +1,100 @@
+/* BUTTONS INDEX*/
+
+.buton__container-index {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.buton__container-index button:hover {
+  color: rgb(242, 237, 236);
+  font-size: 16px;
+  background-color: rgb(10, 133, 228);
+}
+
+.buton__container-index button {
+  font-size: 16px;
+  margin: 5px 5px;
+  padding: 15px;
+  border: #a0e4cbcd;
+  font-family: Plus Jakarta Sans;
+  color: #f7f6f6;
+  background-color: #0844a4;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px rgb(181, 180, 180);
+}
+/* BUTTONS ABOUT */
+
+.main__container-about--top-left button,
+.main__container-about--down-right button {
+  width: 80%;
+  margin: 5px 25px;
+  padding: 5px;
+  font-family: Plus Jakarta Sans;
+  font-size: 16px;
+  color: #f7f6f6;
+  background-color: #0844a4;
+  border: #0844a4;
+  border-radius: 50px;
+  box-shadow: 10px 5px 5px rgb(181, 180, 180);
+}
+
+.main__container-about--top-left button:hover,
+.main__container-about--down-right button:hover {
+  color: rgb(242, 237, 236);
+  background-color: rgb(10, 133, 228);
+  font-size: 16px;
+  box-shadow: 10px 5px 5px (10, 133, 228);
+}
+
+/* BUTTONS CONTACT */
+
+.contact__form-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.form button {
+  margin: 15px;
+  margin-left: 0;
+  padding: 8px 15px;
+  font-size: 15px;
+  border-radius: 5px;
+  border: #0844a4;
+  font-family: Plus Jakarta Sans;
+  color: #7f83b6;
+  box-shadow: 5px 5px 5px rgb(208, 213, 249);
+}
+/* MEDIA QUERYS */
+
+@media (min-width: 768px) {
+  /* BUTTONS ABOUT */
+  .main__container-about--top-left button {
+    margin: 15px 50px;
+    padding: 10px;
+  }
+  .main__container-about--down-right button {
+    margin: 15px 50px;
+    padding: 10px;
+  }
+
+  /* BUTTONS CONTACT */
+  .contact__form-button {
+    width: 100%;
+    justify-content: start;
+  }
+}
+
+@media (min-width: 992px) {
+  /* BUTTONS ABOUT */
+  .main__container-about--down-right button,
+  .main__container-about--top-left button {
+    width: 40%;
+    margin: 20px 0px;
+    padding: 10px;
+  }
+  /* BUTTONS CONTACT */
+
+  .contact__form-button {
+    justify-content: start;
+  }
+}

@@ -1,33 +1,4 @@
 @charset "UTF-8";
-/* GENERAL */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-@font-face {
-  font-family: Tabel;
-  src: url(../assets/ttf/TebelSans-Regular.ttf) format("truetype");
-  font-weight: normal;
-}
-body {
-  font-family: Plus Jakarta Sans;
-}
-
-a {
-  text-decoration: none;
-  color: #f7f6f6;
-}
-
-ul {
-  list-style-type: none;
-}
-
-p {
-  line-height: 1.5;
-}
-
 /* HEADER */
 .header {
   position: sticky;
@@ -68,6 +39,95 @@ p {
   display: none;
 }
 
+.header__container-navbar-mobile {
+  display: flex;
+  flex-direction: column;
+  padding-right: 10px;
+}
+
+@media (min-width: 768px) {
+  /* header index */
+  .header__container {
+    justify-content: space-between;
+  }
+  .header__container-logo img {
+    width: 100px;
+    height: 100px;
+  }
+  .header__container-right {
+    margin-top: 10px;
+  }
+  .header__container-right h1 {
+    display: block;
+    font-size: 40px;
+    padding-left: 40px;
+    margin-bottom: 0;
+    font-family: Plus Jakarta Sans;
+    text-transform: uppercase;
+    color: #f7f6f6;
+    filter: drop-shadow(1px 2px 5px #101939);
+  }
+  .header__container-right .header__container-navbar {
+    display: flex;
+    margin: 10px auto;
+    text-transform: uppercase;
+    flex-wrap: nowrap;
+  }
+  .header__container-right .header__container-navbar ul {
+    display: flex;
+  }
+  .header__container-right .header__container-navbar li a {
+    padding: 5px;
+    margin: 5px;
+    text-decoration: none;
+    color: #f7f6f6;
+  }
+  .header__container-right li {
+    margin-right: 10px;
+  }
+  .header__container-right .header__container-navbar ul li a:hover,
+  .header__container-right .header__container-navbar ul li a:active {
+    color: orange;
+    background-color: #0844a4;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+  }
+}
+@media (min-width: 768px) {
+  .header__container-navbar-mobile {
+    display: none;
+  }
+}
+/* GENERAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Tabel;
+  src: url(../assets/ttf/TebelSans-Regular.ttf) format("truetype");
+  font-weight: normal;
+}
+body {
+  font-family: Plus Jakarta Sans;
+}
+
+a {
+  text-decoration: none;
+  color: #f7f6f6;
+}
+
+ul {
+  list-style-type: none;
+}
+
+p {
+  line-height: 1.5;
+}
+
 .bg-body-tertiary {
   --bs-bg-opacity: 0;
 }
@@ -105,12 +165,6 @@ p {
 .navbar-nav .nav-link.active {
   color: orange;
   text-decoration: underline;
-}
-
-.header__container-navbar-mobile {
-  display: flex;
-  flex-direction: column;
-  padding-right: 10px;
 }
 
 .bi {
@@ -667,53 +721,6 @@ textarea::placeholder {
 
 /* Media Queries */
 @media (min-width: 768px) {
-  /* header index */
-  .header__container {
-    justify-content: space-between;
-  }
-  .header__container-logo img {
-    width: 100px;
-    height: 100px;
-  }
-  .header__container-right {
-    margin-top: 10px;
-  }
-  .header__container-right h1 {
-    display: block;
-    font-size: 40px;
-    padding-left: 40px;
-    margin-bottom: 0;
-    font-family: Plus Jakarta Sans;
-    text-transform: uppercase;
-    color: #f7f6f6;
-    filter: drop-shadow(1px 2px 5px #101939);
-  }
-  .header__container-right .header__container-navbar {
-    display: flex;
-    margin: 10px auto;
-    text-transform: uppercase;
-    flex-wrap: nowrap;
-  }
-  .header__container-right .header__container-navbar ul {
-    display: flex;
-  }
-  .header__container-right .header__container-navbar li a {
-    padding: 5px;
-    margin: 5px;
-    text-decoration: none;
-    color: #f7f6f6;
-  }
-  .header__container-right li {
-    margin-right: 10px;
-  }
-  .header__container-right .header__container-navbar ul li a:hover,
-  .header__container-right .header__container-navbar ul li a:active {
-    color: orange;
-    background-color: #0844a4;
-    border-radius: 5px;
-    padding: 5px;
-    margin: 5px;
-  }
   /* MAIN INDEX*/
   .main__container {
     display: flex;
@@ -727,9 +734,6 @@ textarea::placeholder {
   }
   .main__container-right {
     display: block;
-  }
-  .header__container-navbar-mobile {
-    display: none;
   }
   /* FOOTER INDEX*/
   .footer__index {

@@ -1,0 +1,107 @@
+/* HEADER */
+
+.header {
+  position: sticky;
+  background: linear-gradient(90deg, rgb(5, 60, 149) 42%, rgb(71, 129, 230) 71%);
+}
+
+.header__container {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-content: space-around;
+}
+
+.header__container-left {
+  margin-left: 10px;
+}
+.header__container-logo img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 10px;
+  box-shadow: -5px 0px rgb(6, 94, 162);
+  object-fit: cover;
+  filter: drop-shadow(1px 1px 4px #56a5c9);
+}
+
+.header__container-right {
+  display: flex;
+  flex-direction: column;
+}
+
+.header__container-right h1 {
+  display: none;
+}
+
+.header__container-right .header__container-navbar {
+  display: none;
+}
+
+.header__container-navbar-mobile {
+  display: flex;
+  flex-direction: column;
+  padding-right: 10px;
+}
+
+@media (min-width: 768px) {
+  /* header index */
+
+  .header__container {
+    justify-content: space-between;
+  }
+
+  .header__container-logo img {
+    width: 100px;
+    height: 100px;
+  }
+  .header__container-right {
+    margin-top: 10px;
+  }
+
+  .header__container-right h1 {
+    display: block;
+    font-size: 40px;
+    padding-left: 40px;
+    margin-bottom: 0;
+    font-family: Plus Jakarta Sans;
+    text-transform: uppercase;
+    color: #f7f6f6;
+    filter: drop-shadow(1px 2px 5px #101939);
+  }
+  .header__container-right .header__container-navbar {
+    display: flex;
+    margin: 10px auto;
+    text-transform: uppercase;
+    flex-wrap: nowrap;
+  }
+
+  .header__container-right .header__container-navbar ul {
+    display: flex;
+  }
+
+  .header__container-right .header__container-navbar li a {
+    padding: 5px;
+    margin: 5px;
+    text-decoration: none;
+    color: #f7f6f6;
+  }
+  .header__container-right li {
+    margin-right: 10px;
+  }
+
+  .header__container-right .header__container-navbar ul li a:hover,
+  .header__container-right .header__container-navbar ul li a:active {
+    color: orange;
+    background-color: #0844a4;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+  }
+}
+
+@media (min-width: 768px) {
+  .header__container-navbar-mobile {
+    display: none;
+  }
+}

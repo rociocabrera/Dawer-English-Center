@@ -70,7 +70,7 @@
   .main__advantages-container-dow {
     display: grid;
     max-width: 1200px;
-    grid-template-columns: repeat(1, 2fr);
+    grid-template-columns: repeat(1fr, 2fr);
   }
   .advantages-container-info h2 {
     margin: 0 10px;

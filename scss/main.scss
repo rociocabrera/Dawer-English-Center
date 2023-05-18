@@ -17,34 +17,6 @@
 
 /* Media Queries */
 @media (min-width: 768px) {
-  /* MAIN ADVANTAGES */
-
-  .main__advantages-container-top h1 {
-    font-size: 40px;
-    padding: 5px 20px;
-    margin: 10px;
-    font-weight: lighter;
-  }
-  .main__advantages-container-dow {
-    display: grid;
-    max-width: 1200px;
-    grid-template-columns: repeat(1, 2fr);
-  }
-  .advantages-container-info h2 {
-    margin: 0 10px;
-  }
-  .advantages-container-down p {
-    color: #0844a4;
-    font-size: 16px;
-  }
-
-  .advantages-container-down img {
-    width: 200px;
-    height: 200px;
-    margin-top: 0px;
-    border-radius: 5px;
-  }
-
   /* MAIN SUBSCRIPTION */
 
   .card .price:hover {
@@ -97,14 +69,7 @@
 
 /* MEDIA QUERY 992 */
 @media (min-width: 992px) {
-  /* MAIN ADVANTAGES */
 
-  .main__advantages-container-top h1 {
-    font-weight: lighter;
-  }
-  .advantages-container-info h2 {
-    margin: 10px;
-  }
   /* MAIN CONTACT */
 
   .main__contact {

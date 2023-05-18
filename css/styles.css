@@ -751,18 +751,16 @@ p {
   box-shadow: 1px 5px 5px rgb(10, 133, 228);
 }
 
-.contact::before {
+.contact ::before {
   content: "«";
   color: #7f83b6;
 }
-
-.contact::after {
+.contact ::after {
   content: "»";
   color: #7f83b6;
 }
 
 @media (min-width: 768px) {
-  /* MAIN SUBSCRIPTION */
   .card .price:hover {
     color: #0844a4;
   }

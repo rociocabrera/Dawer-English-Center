@@ -88,7 +88,9 @@
     justify-content: center;
     margin-top: 10px;
   }
-  .main__container-about--down-right h3 {
+  .main__container-about--top-left h3,
+  .main__container-about--top-left h2 {
+    font-size: 40px;
     margin: 10px 0px;
   }
 
@@ -121,7 +123,10 @@
   .main__container-about--top-right {
     margin-top: 0px;
   }
-
+  .main__container-about--top-left h3,
+  .main__container-about--top-left h2 {
+    font-size: 40px;
+  }
   .main__container-about--down-left img,
   .main__container-about--top-right img {
     display: grid;

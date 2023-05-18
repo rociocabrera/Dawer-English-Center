@@ -260,6 +260,33 @@ footer {
     font-size: 12px;
   }
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Plus Jakarta Sans;
+}
+
+a {
+  text-decoration: none;
+  color: #f7f6f6;
+}
+
+ul {
+  list-style-type: none;
+}
+
+p {
+  line-height: 1.5;
+}
+
+.bg-body-tertiary {
+  --bs-bg-opacity: 0;
+}
+
 /* BUTTONS INDEX*/
 .buton__container-index {
   display: flex;
@@ -358,33 +385,6 @@ footer {
   }
 }
 /* GENERAL */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Plus Jakarta Sans;
-}
-
-a {
-  text-decoration: none;
-  color: #f7f6f6;
-}
-
-ul {
-  list-style-type: none;
-}
-
-p {
-  line-height: 1.5;
-}
-
-.bg-body-tertiary {
-  --bs-bg-opacity: 0;
-}
-
 /* MAIN INDEX */
 /* Contenedor padre */
 .main {

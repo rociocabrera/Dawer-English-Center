@@ -5,6 +5,7 @@
 @import "layout/navigation";
 @import "layout/header";
 @import "layout/footer";
+@import "layout/general";
 
 @import "components/buttons";
 
@@ -15,30 +16,6 @@
 @import "pages/contact";
 
 /* GENERAL */
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Plus Jakarta Sans;
-}
-a {
-  text-decoration: none;
-  color: #f7f6f6;
-}
-ul {
-  list-style-type: none;
-}
-p {
-  line-height: 1.5;
-}
-
-.bg-body-tertiary {
-  --bs-bg-opacity: 0;
-}
 
 /* MAIN INDEX */
 
@@ -645,5 +622,4 @@ textarea::placeholder {
   .contact-map iframe {
     width: 900px;
   }
-
 }

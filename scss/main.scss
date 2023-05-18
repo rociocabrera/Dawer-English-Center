@@ -16,24 +16,6 @@
 @import "pages/contact";
 
 
-/* MAIN SUBSCRIPTION */
-
-.card {
-  box-shadow: 6px 15px 13px 1px rgba(171, 182, 185, 0.3) !important;
-}
-.main__subscription-title {
-  color: #0844a4;
-  box-shadow: 1px 5px 5px rgb(10, 133, 228);
-}
-
-.contact::before {
-  content: "«";
-  color: #7f83b6;
-}
-.contact::after {
-  content: "»";
-  color: #7f83b6;
-}
 
 /* MAIN CONTACT */
 .main__contact {

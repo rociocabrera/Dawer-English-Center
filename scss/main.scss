@@ -15,171 +15,119 @@
 @import "pages/subscription";
 @import "pages/contact";
 
-
-
-
-
 /* Media Queries */
 
-@media (min-width: 768px) {
-  /* MAIN INDEX*/
-  .main__container {
-    display: flex;
-    flex-direction: column;
-  }
-  .main__container-left {
-    margin: 10px;
-  }
-
-  .main__container-left-down ul li {
-    font-size: 20px;
-  }
-
-  .main__container-right {
-    display: block;
-  }
-
-  /* MAIN ABOUT */
-  .main__container-about {
-    display: flex;
-    flex-direction: column;
-  }
-  .main__container-about--top-left {
-    margin-top: 10px;
-  }
-  .main__container-about--top-left p {
-    font-size: 20px;
-  }
-
-  .main__container-about--top-right img {
-    width: 100%;
-  }
-  .main__container-about--down-left img {
-    display: none;
-  }
-  .main__container-about--down-right {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 10px;
-  }
-  .main__container-about--mobile {
-    display: grid;
-    width: 100%;
-    border-radius: 20px;
-    box-shadow: 10px 5px 5px rgb(181, 180, 180);
-    object-fit: cover;
-  }
-
-  /* MAIN ADVANTAGES */
-
-  .main__advantages-container-top h1 {
-    font-size: 40px;
-    padding: 5px 20px;
-    margin: 10px;
-    font-weight: lighter;
-  }
-  .main__advantages-container-dow {
-    display: grid;
-    max-width: 1200px;
-    grid-template-columns: repeat(1, 2fr);
-  }
-  .advantages-container-info h2 {
-    margin: 0 10px;
-  }
-  .advantages-container-down p {
-    color: #0844a4;
-    font-size: 16px;
-  }
-
-  .advantages-container-down img {
-    width: 200px;
-    height: 200px;
-    margin-top: 0px;
-    border-radius: 5px;
-  }
-
-  /* MAIN SUBSCRIPTION */
-
-  .card .price:hover {
-    color: #0844a4;
-  }
-  .alert a:hover {
-    background-color: yellow;
-    border-radius: 3px;
-  }
-
-  /* MAIN CONTACT */
-
-  .title-contact h1 {
-    font-size: 30px;
-  }
-  .form-info p,
-  .info__form-details {
-    font-size: 16px;
-  }
-  .general-content {
-    align-items: start;
-    margin: 5px;
-  }
-  .contact-content {
-    width: 100%;
-  }
-  .contact-content h2 {
-    font-size: 30px;
-  }
-  input[type="text"],
-  input[type="email"],
-  input[type="number"] {
-    width: 100%;
-    padding: 12px 5px;
-  }
-
-  .contact-map iframe {
-    width: 100%;
-  }
-
-  .main__contact-network {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  .main__contact-network {
-    width: 100%;
-    margin: 10px 0px;
-    align-items: center;
-  }
+/* MAIN ABOUT */
+.main__container-about {
+  display: flex;
+  flex-direction: column;
 }
+.main__container-about--top-left {
+  margin-top: 10px;
+}
+.main__container-about--top-left p {
+  font-size: 20px;
+}
+
+.main__container-about--top-right img {
+  width: 100%;
+}
+.main__container-about--down-left img {
+  display: none;
+}
+.main__container-about--down-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 10px;
+}
+.main__container-about--mobile {
+  display: grid;
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 10px 5px 5px rgb(181, 180, 180);
+  object-fit: cover;
+}
+
+/* MAIN ADVANTAGES */
+
+.main__advantages-container-top h1 {
+  font-size: 40px;
+  padding: 5px 20px;
+  margin: 10px;
+  font-weight: lighter;
+}
+.main__advantages-container-dow {
+  display: grid;
+  max-width: 1200px;
+  grid-template-columns: repeat(1, 2fr);
+}
+.advantages-container-info h2 {
+  margin: 0 10px;
+}
+.advantages-container-down p {
+  color: #0844a4;
+  font-size: 16px;
+}
+
+.advantages-container-down img {
+  width: 200px;
+  height: 200px;
+  margin-top: 0px;
+  border-radius: 5px;
+}
+
+/* MAIN SUBSCRIPTION */
+
+.card .price:hover {
+  color: #0844a4;
+}
+.alert a:hover {
+  background-color: yellow;
+  border-radius: 3px;
+}
+
+/* MAIN CONTACT */
+
+.title-contact h1 {
+  font-size: 30px;
+}
+.form-info p,
+.info__form-details {
+  font-size: 16px;
+}
+.general-content {
+  align-items: start;
+  margin: 5px;
+}
+.contact-content {
+  width: 100%;
+}
+.contact-content h2 {
+  font-size: 30px;
+}
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+  width: 100%;
+  padding: 12px 5px;
+}
+
+.contact-map iframe {
+  width: 100%;
+}
+
+.main__contact-network {
+  justify-content: space-between;
+}
+.main__contact-network {
+  width: 100%;
+  margin: 10px 0px;
+  align-items: center;
+}
+
 /* MEDIA QUERY 992 */
 @media (min-width: 992px) {
-  /* INDEX */
-  .main__container {
-    display: flex;
-    flex-direction: row;
-    max-width: 1200px;
-  }
-  .main__container-about--top-left h3,
-  .main__container-about--top-left h2,
-  .main__container-about--down-right h3 {
-    font-size: 40px;
-  }
-
-  .main__container-about--top-left p,
-  .main__container-about--down-right p {
-    font-size: 18px;
-  }
-
-  .main__container-left {
-    margin: 10px;
-    width: 50%;
-  }
-  .main__container-left-down {
-    display: flex;
-    flex-direction: column;
-  }
-  .main__container-right {
-    width: 50%;
-  }
-
   /* ABOUT */
 
   .main__container-about {

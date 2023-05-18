@@ -89,7 +89,13 @@
 }
 @media (min-width: 992px) {
   /* MAIN ADVANTAGES */
-
+  .main__advantages-container-dow {
+    display: grid;
+    max-width: 1200px;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 10px;
+    margin-top: 10px;
+  }
   .main__advantages-container-top h1 {
     font-weight: lighter;
   }

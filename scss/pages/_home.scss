@@ -41,12 +41,12 @@
           list-style: none;
           margin: 0;
           padding: 0;
-        }
-        & li {
-          list-style: none;
-          font-size: 16px;
-          color: #0844a4;
-          text-shadow: 1px 0px #9ab8e9;
+          & li {
+            list-style: none;
+            font-size: 16px;
+            color: #0844a4;
+            text-shadow: 1px 0px #9ab8e9;
+          }
         }
       }
     }
@@ -75,13 +75,15 @@
       .main__container-left {
         margin: 10px;
         .main__container-left-down {
-          &li {
-            font-size: 20px;
+          & ul {
+            & li {
+              font-size: 20px;
+            }
           }
         }
-        .main__container-right {
-          display: block;
-        }
+      }
+      .main__container-right {
+        display: block;
       }
     }
   }
@@ -100,6 +102,11 @@
         .main__container-left-down {
           display: flex;
           flex-direction: column;
+          & ul {
+            & li {
+              font-size: 20px;
+            }
+          }
         }
       }
       .main__container-right {

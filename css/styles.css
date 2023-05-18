@@ -441,7 +441,7 @@ p {
     flex-direction: column;
   }
   .main__index .main__container .main__container-left .main__container-left-down ul li {
-    font-size: 20px;
+    font-size: 22px;
   }
   .main__index .main__container .main__container-right {
     width: 50%;
@@ -644,18 +644,15 @@ p {
   max-width: 1200px;
   margin: 0 auto;
 }
-
-.main__advantages-container {
+.main__advantages .main__advantages-container {
   display: flex;
   flex-direction: column;
 }
-
-.main__advantages-container-top {
+.main__advantages .main__advantages-container .main__advantages-container-top {
   display: block;
   justify-content: start;
 }
-
-.main__advantages-container-top h1 {
+.main__advantages .main__advantages-container .main__advantages-container-top h1 {
   font-size: 20px;
   padding: 10px 20px;
   margin: 0 10px;
@@ -664,89 +661,84 @@ p {
   box-shadow: 1px 5px 5px rgb(10, 133, 228);
   border-radius: 10px;
 }
-
-.main__advantages-container-dow {
+.main__advantages .main__advantages-container .main__advantages-container-dow {
   display: block;
   max-width: 1200px;
   margin-top: 0px;
 }
-
-.advantages-container-down {
+.main__advantages .main__advantages-container .main__advantages-container-dow .advantages-container-down {
   display: flex;
   flex-direction: row;
   margin: 10px;
   box-shadow: 5px 5px 5px rgb(208, 213, 249);
   border-radius: 10px;
 }
-
-.advantages-container-info h2 {
-  font-size: 20px;
-  font-weight: lighter;
-  color: #0844a4;
-  margin: 10px;
-  font-weight: bold;
-}
-
-.advantages-container-down img {
+.main__advantages .main__advantages-container .main__advantages-container-dow .advantages-container-down img {
   width: 100px;
   height: 100px;
   border-radius: 5px;
   object-fit: cover;
   margin-top: 10px;
 }
-
-.advantages-container-down img:hover {
+.main__advantages .main__advantages-container .main__advantages-container-dow .advantages-container-down img:hover {
   padding: 5px;
   border-radius: 10px;
   filter: drop-shadow(1px 5px 1px rgba(0, 0, 0, 0.3));
 }
-
-.advantages-container-down p {
+.main__advantages .main__advantages-container .main__advantages-container-dow .advantages-container-down .advantages-container-info h2 {
+  font-size: 20px;
+  font-weight: lighter;
+  color: #0844a4;
+  margin: 10px;
+  font-weight: bold;
+}
+.main__advantages .main__advantages-container .main__advantages-container-dow .advantages-container-down .advantages-container-info p {
   color: #0844a4;
   margin: 5px 10px;
 }
 
 @media (min-width: 768px) {
   /* MAIN ADVANTAGES */
-  .main__advantages-container-top h1 {
+  .main__advantages .main__advantages-container .main__advantages-container-top h1 {
     font-size: 40px;
     padding: 5px 20px;
     margin: 10px;
     font-weight: lighter;
   }
-  .main__advantages-container-dow {
-    display: grid;
+  .main__advantages .main__advantages-container .main__advantages-container-dow .advantages-container-down {
+    display: flex;
     max-width: 1200px;
-    grid-template-columns: repeat(1fr, 2fr);
+    margin-top: 20px;
   }
-  .advantages-container-info h2 {
+  .main__advantages .main__advantages-container .main__advantages-container-dow .advantages-container-down img {
+    width: 150px;
+    height: 150px;
+    margin-top: 0;
+  }
+  .main__advantages .main__advantages-container .main__advantages-container-dow .advantages-container-down .advantages-container-info h2 {
     margin: 0 10px;
   }
-  .advantages-container-down p {
+  .main__advantages .main__advantages-container .main__advantages-container-dow .advantages-container-down .advantages-container-info p {
     color: #0844a4;
     font-size: 16px;
-  }
-  .advantages-container-down img {
-    width: 200px;
-    height: 200px;
-    margin-top: 0px;
-    border-radius: 5px;
   }
 }
 @media (min-width: 992px) {
   /* MAIN ADVANTAGES */
-  .main__advantages-container-dow {
+  .main__advantages .main__advantages-container .main__advantages-container-top h1 {
+    font-weight: lighter;
+  }
+  .main__advantages .main__advantages-container .main__advantages-container-dow {
     display: grid;
     max-width: 1200px;
     grid-template-columns: repeat(2, 2fr);
-    gap: 10px;
-    margin-top: 10px;
   }
-  .main__advantages-container-top h1 {
-    font-weight: lighter;
+  .main__advantages .main__advantages-container .main__advantages-container-dow .advantages-container-down img {
+    width: 200px;
+    height: 200px;
   }
-  .advantages-container-info h2 {
-    margin: 10px;
+  .main__advantages .main__advantages-container .main__advantages-container-dow .advantages-container-down .advantages-container-info h2 {
+    margin: 0 10px;
   }
 }
 /* MAIN SUBSCRIPTION */

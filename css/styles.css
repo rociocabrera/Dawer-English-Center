@@ -312,39 +312,6 @@ p {
   box-shadow: 5px 5px 5px rgb(181, 180, 180);
 }
 
-/* BUTTONS CONTACT */
-.contact__form-button {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-.form button {
-  margin: 15px;
-  margin-left: 0;
-  padding: 8px 15px;
-  font-size: 15px;
-  border-radius: 5px;
-  border: #0844a4;
-  font-family: Plus Jakarta Sans;
-  color: #7f83b6;
-  box-shadow: 5px 5px 5px rgb(208, 213, 249);
-}
-
-/* MEDIA QUERYS */
-@media (min-width: 768px) {
-  /* BUTTONS CONTACT */
-  .contact__form-button {
-    width: 100%;
-    justify-content: start;
-  }
-}
-@media (min-width: 992px) {
-  /* BUTTONS CONTACT */
-  .contact__form-button {
-    justify-content: start;
-  }
-}
 /* MAIN INDEX */
 /* Contenedor padre */
 .main__index {
@@ -769,19 +736,16 @@ p {
     border-radius: 3px;
   }
 }
-/* MAIN CONTACT */
 .main__contact {
   display: flex;
   flex-direction: column;
   height: auto;
   margin: 5px;
 }
-
-.title-contact {
+.main__contact .title-contact {
   width: 100%;
 }
-
-.title-contact h1 {
+.main__contact .title-contact h1 {
   padding: 10px;
   font-size: 26px;
   text-align: center;
@@ -790,78 +754,67 @@ p {
   border-radius: 10px;
   box-shadow: 1px 5px 5px rgb(10, 133, 228);
 }
-
-.general-content {
+.main__contact .general-content {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 5px;
 }
-
-.contact-content {
+.main__contact .general-content .contact-content {
   display: flex;
   flex-direction: column;
   height: auto;
   margin-bottom: 5px;
 }
-
-.form-info {
+.main__contact .general-content .contact-content .form-info {
   height: auto;
   text-align: justify;
 }
-
-.form-info p,
-.info__form-details {
-  font-size: 12px;
+.main__contact .general-content .contact-content .form-info p {
+  font-size: 16px;
   text-align: justify;
   font-weight: lighter;
   color: #0844a4;
   margin-top: 5px;
-  margin-bottom: 0px;
+  margin-bottom: 10px;
 }
-
-form label {
+.main__contact .general-content .contact-content .form form {
+  padding: 10px;
+  background-color: aliceblue;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px 1px rgb(208, 213, 249);
+}
+.main__contact .general-content .contact-content .form form label {
   color: #7f83b6;
   margin-bottom: 5px;
 }
-
-input[type=text],
-input[type=email],
-input[type=number] {
+.main__contact .general-content .contact-content .form form input {
+  width: 100%;
+  border: solid 1px;
+  border-color: #7f83b6;
+  border-radius: 5px;
+  color: #7f83b6;
+  box-shadow: 5px 5px 5px rgb(208, 213, 249);
+}
+.main__contact .general-content .contact-content .form form [type=text], .main__contact .general-content .contact-content .form form [type=email], .main__contact .general-content .contact-content .form form [type=number] {
   padding-left: 5px;
   margin-bottom: 10px;
   width: 100%;
   height: 40px;
 }
-
-form input {
-  width: 230px;
-  border: solid 1px;
-  border-color: #7f83b6;
-  border-radius: 5px;
-  color: #7f83b6;
-}
-
-input[type=checkbox] {
-  width: 20px;
-}
-
-#name::placeholder {
+.main__contact .general-content .contact-content .form form #name::placeholder {
   color: #7f83b6;
   padding: 5px 2px;
 }
-
-#email::placeholder {
+.main__contact .general-content .contact-content .form form #email::placeholder {
   color: #7f83b6;
   padding: 5px 2px;
 }
-
-#number::placeholder {
+.main__contact .general-content .contact-content .form form #number::placeholder {
   color: #7f83b6;
   padding: 5px 2px;
 }
-
-textarea {
+.main__contact .general-content .contact-content .form form textarea {
   margin-top: 10px;
   padding-left: 5px;
   width: 100%;
@@ -872,20 +825,64 @@ textarea {
   color: #7f83b6;
   box-shadow: 5px 5px 5px rgb(208, 213, 249);
 }
-
-textarea::placeholder {
+.main__contact .general-content .contact-content .form form ::placeholder {
   color: #7f83b6;
 }
-
-.contact-map {
+.main__contact .general-content .contact-content .form form p {
+  font-size: 16px;
+  text-align: justify;
+  font-weight: lighter;
+  color: #0844a4;
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+.main__contact .general-content .contact-content .form form p [type=checkbox] {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+.main__contact .general-content .contact-content .form form .contact__form-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.main__contact .general-content .contact-content .form form .contact__form-button button {
+  margin: 15px;
+  margin-left: 0;
+  padding: 8px 15px;
+  font-size: 15px;
+  border-radius: 5px;
+  border: #0844a4;
+  font-family: Plus Jakarta Sans;
+  color: #7f83b6;
+  box-shadow: 5px 5px 5px rgb(208, 213, 249);
+}
+.main__contact .contact-map {
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 100%;
   height: auto;
 }
-
-.contact-map h2 {
+.main__contact .contact-map iframe {
+  margin: 10px 0px;
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px 1px rgb(208, 213, 249);
+}
+.main__contact .contact-map .main__contact-network {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: aliceblue;
+  width: 100%;
+  height: auto;
+  margin: 10px 0px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px 1px rgb(208, 213, 249);
+}
+.main__contact .contact-map .main__contact-network h2 {
   display: flex;
   justify-content: center;
   margin: 10px 0px;
@@ -893,118 +890,135 @@ textarea::placeholder {
   font-weight: lighter;
   color: #0844a4;
 }
-
-.contact-map iframe {
-  margin: 10px 0px;
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-  box-shadow: 5px 5px 5px 1px rgb(208, 213, 249);
-}
-
-.main__contact-network {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-color: aliceblue;
-}
-
-.main__contact-network h2 {
-  margin: 10px;
-}
-
-.contact-network {
+.main__contact .contact-map .main__contact-network .contact-network {
   display: flex;
   flex-direction: row;
   justify-content: center;
   margin: 10px;
 }
-
-.main__contact-network img {
+.main__contact .contact-map .main__contact-network .contact-network img {
   margin: 0 5px;
   width: 50px;
   object-fit: cover;
   border-radius: 50%;
 }
 
-/* MEDIA QUERYS */
 @media (min-width: 768px) {
-  /* MAIN CONTACT */
-  .title-contact h1 {
+  .main__contact .title-contact h1 {
     font-size: 30px;
   }
-  .form-info p,
-  .info__form-details {
-    font-size: 16px;
-  }
-  .general-content {
+  .main__contact .general-content {
     align-items: start;
     margin: 5px;
   }
-  .contact-content {
-    width: 100%;
+  .main__contact .general-content .contact-content .form-info p {
+    font-size: 16px;
   }
-  .contact-content h2 {
-    font-size: 30px;
-  }
-  input[type=text],
-  input[type=email],
-  input[type=number] {
+  .main__contact .general-content .contact-content .form form input [type=text], .main__contact .general-content .contact-content .form form input [type=email], .main__contact .general-content .contact-content .form form input [type=number] {
     width: 100%;
     padding: 12px 5px;
   }
-  .contact-map iframe {
+  .main__contact .general-content .contact-content .form form textarea {
+    width: 100%;
+    padding: 12px 5px;
+  }
+  .main__contact .general-content .contact-content .form form p {
+    font-size: 16px;
+  }
+  .main__contact .general-content .contact-content .form form p [type=checkbox] {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+  }
+  .main__contact .general-content .contact-content .form form .contact__form-button button {
+    margin: 15px;
+    margin-left: 0;
+    padding: 8px 15px;
+    font-size: 15px;
+  }
+  .main__contact .contact-map iframe {
     width: 100%;
   }
-  .main__contact-network {
-    justify-content: space-between;
-  }
-  .main__contact-network {
+  .main__contact .contact-map .main__contact-network {
     width: 100%;
     margin: 10px 0px;
     align-items: center;
+    justify-content: space-between;
+  }
+  .main__contact .contact-map .main__contact-network h2 {
+    font-size: 16px;
   }
 }
-/* MEDIA QUERY 992 */
 @media (min-width: 992px) {
-  /* MAIN CONTACT */
   .main__contact {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  .title-contact {
+  .main__contact .title-contact {
     width: 900px;
     margin: 10px;
   }
-  .title-contact h1 {
+  .main__contact .title-contact h1 {
     display: flex;
     justify-content: center;
     font-size: 40px;
   }
-  .form-info p,
-  .info__form-details {
-    font-size: 16px;
-  }
-  .general-content {
+  .main__contact .general-content {
+    display: flex;
     align-items: start;
     margin: 0px;
   }
-  .contact-content {
+  .main__contact .general-content .contact-content {
     width: 900px;
   }
-  input[type=text],
-  input[type=email],
-  input[type=number] {
+  .main__contact .general-content .contact-content .form-info p {
+    font-size: 18px;
+  }
+  .main__contact .general-content .contact-content .form form input [type=text], .main__contact .general-content .contact-content .form form input [type=email], .main__contact .general-content .contact-content .form form input [type=number] {
     padding-left: 5px;
     margin-bottom: 10px;
     margin-top: 0px;
-    width: 900px;
+    width: 100%;
+    height: 30px;
+    border: solid 1px;
+    border-radius: 5px;
+    border-color: #7f83b6;
+    color: #7f83b6;
+    box-shadow: 5px 5px 5px rgb(208, 213, 249);
   }
-  textarea {
-    width: 900px;
+  .main__contact .general-content .contact-content .form form textarea {
+    width: 100%;
+    height: 100px;
+    padding-left: 5px;
+    margin-bottom: 10px;
+    margin-top: 0px;
+    border: solid 1px;
+    border-radius: 5px;
+    border-color: #7f83b6;
+    color: #7f83b6;
+    box-shadow: 5px 5px 5px rgb(208, 213, 249);
   }
-  .contact-map iframe {
+  .main__contact .general-content .contact-content .form form p {
+    font-size: 16px;
+  }
+  .main__contact .general-content .contact-content .form form p [type=checkbox] {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+  }
+  .main__contact .general-content .contact-content .form form .contact__form-button button {
+    margin: 15px;
+    margin-left: 0;
+    padding: 8px 15px;
+    font-size: 15px;
+    border-radius: 5px;
+    border: #0844a4;
+    font-family: Plus Jakarta Sans;
+    color: #7f83b6;
+    box-shadow: 5px 5px 5px rgb(208, 213, 249);
+  }
+  .main__contact .general-content .contact-map iframe {
     width: 900px;
   }
 }

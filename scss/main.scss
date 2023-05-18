@@ -15,18 +15,7 @@
 @import "pages/subscription";
 @import "pages/contact";
 
-/* Media Queries */
 @media (min-width: 768px) {
-  /* MAIN SUBSCRIPTION */
-
-  .card .price:hover {
-    color: #0844a4;
-  }
-  .alert a:hover {
-    background-color: yellow;
-    border-radius: 3px;
-  }
-
   /* MAIN CONTACT */
 
   .title-contact h1 {
@@ -69,7 +58,6 @@
 
 /* MEDIA QUERY 992 */
 @media (min-width: 992px) {
-
   /* MAIN CONTACT */
 
   .main__contact {

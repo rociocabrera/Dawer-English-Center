@@ -1,24 +1,6 @@
-/* BUTTONS INDEX*/
-
-.buton__container-index {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-.buton__container-index button:hover {
-  color: rgb(242, 237, 236);
-  font-size: 16px;
-  background-color: rgb(10, 133, 228);
-}
-
-.buton__container-index button {
-  font-size: 16px;
-  margin: 5px 5px;
-  padding: 15px;
-  border: #a0e4cbcd;
-  font-family: Plus Jakarta Sans;
-  color: #f7f6f6;
-  background-color: #0844a4;
-  border-radius: 10px;
-  box-shadow: 5px 5px 5px rgb(181, 180, 180);
+/* extend */
+button {
+  .box-shadow {
+    box-shadow: 5px 5px 5px rgb(242, 238, 238);
+  }
 }

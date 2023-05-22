@@ -1,126 +1,112 @@
-/* MAIN ADVANTAGES */
-
-.main__advantages {
-  display: flex;
-  max-width: 1200px;
-  margin: 0 auto;
-  .main__advantages-container {
-    display: flex;
-    flex-direction: column;
-    .main__advantages-container-top {
+.main {
+  @extend .container;
+  &__container-advantages {
+    span {
       display: block;
-      justify-content: start;
-      & h1 {
+      h1 {
         font-size: 20px;
         padding: 10px 20px;
         margin: 0 10px;
         font-weight: bold;
-        color: #0844a4;
+        color: $primaryColor;
         box-shadow: 1px 5px 5px rgb(10, 133, 228);
         border-radius: 10px;
       }
     }
-    .main__advantages-container-dow {
-      display: block;
+    &-card {
+      @include templateFlex(column, space-between, true);
       max-width: 1200px;
-      margin-top: 0px;
-      .advantages-container-down {
+      margin: 20px 10px;
+      &-container {
         display: flex;
         flex-direction: row;
-        margin: 10px;
         box-shadow: 5px 5px 5px rgb(208, 213, 249);
         border-radius: 10px;
-        & img {
+        margin-top: 10px;
+        img {
           width: 100px;
           height: 100px;
           border-radius: 5px;
           object-fit: cover;
           margin-top: 10px;
         }
-        & img:hover {
+        img:hover {
           padding: 5px;
           border-radius: 10px;
           filter: drop-shadow(1px 5px 1px rgba(0, 0, 0, 0.3));
         }
-        .advantages-container-info {
-          & h2 {
-            font-size: 20px;
-            font-weight: lighter;
-            color: #0844a4;
-            margin: 10px;
-            font-weight: bold;
-          }
-          & p {
-            color: #0844a4;
-            margin: 5px 10px;
-          }
+        h2 {
+          font-size: 20px;
+          font-weight: lighter;
+          color: $primaryColor;
+          margin: 10px;
+          font-weight: bold;
+        }
+        p {
+          color: $primaryColor;
+          margin: 5px 10px;
         }
       }
     }
   }
 }
 
-@media (min-width: 768px) {
-  /* MAIN ADVANTAGES */
-  .main__advantages {
-    .main__advantages-container {
-      .main__advantages-container-top {
-        h1 {
-          font-size: 40px;
-          padding: 5px 20px;
-          margin: 10px;
-          font-weight: lighter;
+@media (min-width: $bpMedium) {
+  .main {
+    span {
+      @include templateFlex(column, space-between, true);
+      margin: 0 10px;
+      h1 {
+        font-size: 40px;
+        padding: 5px 20px;
+        margin: 0px;
+        font-weight: lighter;
+        width: 100%;
+      }
+    }
+    &__container-advantages {
+      margin: 20px 10px;
+      &-card {
+        max-width: 1200px;
+        margin: 0 10px;
+        img {
+          width: 200px;
+          height: 200px;
+          margin-top: 0;
+        }
+        &-info {
+          h2 {
+            margin: 0 10px;
+          }
+          p {
+            color: $primaryColor;
+            font-size: 16px;
+          }
+        }
+        &-container {
+          margin-top: 20px;
         }
       }
-      .main__advantages-container-dow {
-        .advantages-container-down {
-          display: flex;
-          max-width: 1200px;
-          margin-top: 20px;
-          & img {
+    }
+  }
+}
+
+@media (min-width: $bpLarge) {
+  .main {
+    &__container-advantages {
+      &-card {
+        @include templateGrid(1, $bpLarge, 2);
+        &-container {
+          img {
             width: 150px;
             height: 150px;
-            margin-top: 0;
+            margin: 10px 0;
           }
-          .advantages-container-info {
-            & h2 {
-              margin: 0 10px;
-            }
-            & p {
-              color: #0844a4;
-              font-size: 16px;
-            }
+          h2 {
+            font-size: 30px;
           }
-        }
-      }
-    }
-  }
-}
-
-@media (min-width: 992px) {
-  /* MAIN ADVANTAGES */
-  .main__advantages {
-    .main__advantages-container {
-      .main__advantages-container-top {
-        h1 {
-          font-weight: lighter;
-        }
-      }
-
-      .main__advantages-container-dow {
-        display: grid;
-        max-width: 1200px;
-        grid-template-columns: repeat(2, 2fr);
-
-        .advantages-container-down {
-          & img {
-            width: 200px;
-            height: 200px;
-          }
-          .advantages-container-info {
-            & h2 {
-              margin: 0 10px;
-            }
+          p {
+            font-size: 20px;
           }
         }
       }

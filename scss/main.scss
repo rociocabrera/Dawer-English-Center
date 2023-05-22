@@ -1,11 +1,11 @@
 @import "utilities/variables";
+@import "layout/general";
 
 @import "base/typo";
 
+@import "layout/footer";
 @import "layout/navigation";
 @import "layout/header";
-@import "layout/footer";
-@import "layout/general";
 
 @import "components/buttons";
 
@@ -14,5 +14,3 @@
 @import "pages/advantages";
 @import "pages/subscription";
 @import "pages/contact";
-
-

@@ -45,8 +45,6 @@
 }
 
 @media (min-width: 768px) {
-  /* header index */
-
   .header__container {
     justify-content: space-between;
   }
@@ -93,7 +91,7 @@
   .header__container-right .header__container-navbar ul li a:hover,
   .header__container-right .header__container-navbar ul li a:active {
     color: orange;
-    background-color: #0844a4;
+    background-color: $primaryColor;
     border-radius: 5px;
     padding: 5px;
     margin: 5px;

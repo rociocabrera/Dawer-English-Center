@@ -1,10 +1,8 @@
-/* MAIN SUBSCRIPTION */
-
 .card {
   box-shadow: 6px 15px 13px 1px rgba(171, 182, 185, 0.3) !important;
 }
-.main__subscription-title {
-  color: #0844a4;
+.title {
+  color: $primaryColor;
   box-shadow: 1px 5px 5px rgb(10, 133, 228);
 }
 
@@ -18,10 +16,10 @@
     color: #7f83b6;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: $bpMedium) {
   .card {
     .price:hover {
-      color: #0844a4;
+      color: $primaryColor;
     }
   }
   .alert {

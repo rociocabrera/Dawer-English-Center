@@ -1,53 +1,49 @@
 .main__contact {
-  display: flex;
-  flex-direction: column;
-  height: auto;
-  margin: 5px;
-  .title-contact {
-    width: 100%;
-    & h1 {
+  @extend .container;
+  span {
+    h1 {
+      color: $primaryColor;
       padding: 10px;
       font-size: 26px;
       text-align: center;
       font-weight: bold;
-      color: #0844a4;
-      border-radius: 10px;
-      box-shadow: 1px 5px 5px rgb(10, 133, 228);
+      border-radius: 5px;
+      box-shadow: 5px 5px 5px 1px rgb(208, 213, 249);
+      background-color: white;
+      margin: 0 10px;
     }
   }
-  .general-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 5px;
-    .contact-content {
+  &-container {
+    @include templateFlex(column, center, true);
+    margin: 20px 10px;
+    &-form {
       display: flex;
       flex-direction: column;
       height: auto;
       margin-bottom: 5px;
-      .form-info {
+      &-paragraph {
         height: auto;
         text-align: justify;
-        & p {
+        p {
           font-size: 16px;
           text-align: justify;
           font-weight: lighter;
-          color: #0844a4;
+          color: $primaryColor;
           margin-top: 5px;
           margin-bottom: 10px;
         }
       }
-      .form {
+      &-table {
         form {
           padding: 10px;
-          background-color: aliceblue;
+          background-color: lavender;
           border-radius: 5px;
           box-shadow: 5px 5px 5px 1px rgb(208, 213, 249);
-          & label {
+          label {
             color: #7f83b6;
             margin-bottom: 5px;
           }
-          & input {
+          input {
             width: 100%;
             border: solid 1px;
             border-color: #7f83b6;
@@ -55,9 +51,9 @@
             color: #7f83b6;
             box-shadow: 5px 5px 5px rgb(208, 213, 249);
           }
-          & [type="text"],
-          & [type="email"],
-          & [type="number"] {
+          [type="text"],
+          [type="email"],
+          [type="number"] {
             padding-left: 5px;
             margin-bottom: 10px;
             width: 100%;
@@ -93,7 +89,7 @@
             font-size: 16px;
             text-align: justify;
             font-weight: lighter;
-            color: #0844a4;
+            color: $primaryColor;
             margin-top: 5px;
             margin-bottom: 0px;
 
@@ -103,17 +99,16 @@
               margin-right: 5px;
             }
           }
-          .contact__form-button {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            & button {
-              margin: 15px;
-              margin-left: 0;
-              padding: 8px 15px;
-              font-size: 15px;
+          div {
+            @include templateFlex(row, center, false);
+            justify-content: end;
+            margin: 10px 0;
+            button {
+              margin: 5px;
+              padding: 10px 15px;
+              font-size: 18px;
               border-radius: 5px;
-              border: #0844a4;
+              border: $primaryColor;
               font-family: Plus Jakarta Sans;
               color: #7f83b6;
               box-shadow: 5px 5px 5px rgb(208, 213, 249);
@@ -123,70 +118,25 @@
       }
     }
   }
-  .contact-map {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-    height: auto;
-    & iframe {
-      margin: 10px 0px;
-      width: 100%;
-      height: auto;
-      border-radius: 5px;
-      box-shadow: 5px 5px 5px 1px rgb(208, 213, 249);
-    }
-    .main__contact-network {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      background-color: aliceblue;
-      width: 100%;
-      height: auto;
-      margin: 10px 0px;
-      border-radius: 5px;
-      box-shadow: 5px 5px 5px 1px rgb(208, 213, 249);
-      & h2 {
-        display: flex;
-        justify-content: center;
-        margin: 10px 0px;
-        font-size: 16px;
-        font-weight: lighter;
-        color: #0844a4;
-      }
-      .contact-network {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        margin: 10px;
-        img {
-          margin: 0 5px;
-          width: 50px;
-          object-fit: cover;
-          border-radius: 50%;
-        }
-      }
-    }
-  }
 }
 
-@media (min-width: 768px) {
+@media (min-width: $bpMedium) {
   .main__contact {
-    .title-contact {
-      & h1 {
+    span {
+      h1 {
         font-size: 30px;
       }
     }
-    .general-content {
+    &-container {
       align-items: start;
-      margin: 5px;
-      .contact-content {
-        .form-info {
-          & p {
+      margin: 10px;
+      &-form {
+        &-paragraph {
+          p {
             font-size: 16px;
           }
         }
-        .form {
+        &-table {
           form {
             input {
               & [type="text"],
@@ -208,8 +158,9 @@
                 margin-right: 5px;
               }
             }
-            .contact__form-button {
-              & button {
+            div {
+              margin: 0;
+              button {
                 margin: 15px;
                 margin-left: 0;
                 padding: 8px 15px;
@@ -220,51 +171,36 @@
         }
       }
     }
-    .contact-map {
-      & iframe {
-        width: 100%;
-      }
-      .main__contact-network {
-        width: 100%;
-        margin: 10px 0px;
-        align-items: center;
-        justify-content: space-between;
-        & h2 {
-          font-size: 16px;
-        }
-        .contact-network {
-        }
-      }
-    }
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: $bpLarge) {
   .main__contact {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    .title-contact {
-      width: 900px;
-      margin: 10px;
-      & h1 {
+    @include templateFlex(column, center, true);
+    span {
+      width: 100%;
+      padding: 10px;
+      h1 {
         display: flex;
         justify-content: center;
         font-size: 40px;
+        color: $primaryColor;
+        margin: 0;
       }
     }
-    .general-content {
-      display: flex;
+    &-container {
+      @include templateFlex(column, center, false);
       align-items: start;
-      margin: 0px;
-      .contact-content {
-        width: 900px;
-        .form-info {
-          & p {
-            font-size: 18px;
+      margin: 20px 10px;
+      &-form {
+        width: 100%;
+        &-paragraph {
+          p {
+            text-align: center;
+            font-size: 20px;
           }
         }
-        .form {
+        &-table {
           form {
             input {
               & [type="text"],
@@ -282,7 +218,7 @@
                 box-shadow: 5px 5px 5px rgb(208, 213, 249);
               }
             }
-            & textarea {
+            textarea {
               width: 100%;
               height: 100px;
               padding-left: 5px;
@@ -302,25 +238,21 @@
                 margin-right: 5px;
               }
             }
-            .contact__form-button {
-              & button {
-                margin: 15px;
-                margin-left: 0;
-                padding: 8px 15px;
-                font-size: 15px;
+            div {
+              justify-content: start;
+              margin: 10px 0;
+              button {
+                margin: 10px;
+                padding: 10px 20px;
+                font-size: 20px;
                 border-radius: 5px;
-                border: #0844a4;
+                border: $primaryColor;
                 font-family: Plus Jakarta Sans;
                 color: #7f83b6;
                 box-shadow: 5px 5px 5px rgb(208, 213, 249);
               }
             }
           }
-        }
-      }
-      .contact-map {
-        & iframe {
-          width: 900px;
         }
       }
     }

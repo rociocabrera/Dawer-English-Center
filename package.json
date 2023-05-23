@@ -4,7 +4,7 @@
   "description": "Este es un proyecto de práctica de HTML y CSS del curso de **Desarrollo Web**.",
   "main": "index.js",
   "scripts": {
-    "build-sass": "sass ./scss/styles.scss ./css/styles.css -w"
+    "build-sass": "sass ./scss/main.scss ./css/styles.css -w --no-source-map"
   },
   "repository": {
     "type": "git",

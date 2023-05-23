@@ -1,0 +1,95 @@
+/* FOOTER INDEX*/
+
+.footer {
+  background: linear-gradient(90deg, rgb(5, 60, 149) 42%, rgb(71, 129, 230) 71%);
+  color: $primaryColor;
+  padding: 20px 20px;
+
+  &__container {
+    @extend .container;
+    @include templateGrid(1, 768px, 3);
+    h4 {
+      color: white;
+      margin-bottom: 20px;
+      font-size: 20px;
+      font-weight: bold;
+      margin-left: 10px;
+      text-shadow: 0 0 10px white;
+    }
+    &-list {
+      margin-left: 10px;
+      padding-left: 0;
+      li {
+        margin: 10px 0;
+        a {
+          color: white;
+          &:hover {
+            color: orange;
+          }
+        }
+      }
+    }
+    h3 {
+      color: white;
+      margin-bottom: 20px;
+      font-size: 18px;
+      font-weight: bold;
+      margin-left: 10px;
+    }
+    &-ssmm {
+      @each $socialName, $socialColors in $socialIcons {
+        .#{$socialName} {
+          color: white;
+          font-size: 30px;
+          margin: 5px;
+          &:hover {
+            color: $socialColors;
+          }
+        }
+      }
+    }
+  }
+
+  &__copy {
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: $bpMedium) {
+  .footer__container {
+    h4 {
+      text-shadow: none;
+      color: orange;
+      background-color: $primaryColor;
+      border-radius: 5px;
+      padding: 5px;
+      margin: 0px;
+    }
+    &-list {
+      margin-left: 5px;
+      padding-left: 0;
+      li {
+        margin: 10px 0;
+        a {
+          color: white;
+          &:hover {
+            color: white;
+            text-shadow: 0 0 10px white;
+          }
+        }
+      }
+    }
+    h3 {
+      &:hover {
+        text-shadow: none;
+      }
+    }
+  }
+}
+@media (min-width: $bpLarge) {
+  .footer__container {
+    gap: 50px;
+  }
+}

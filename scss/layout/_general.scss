@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Plus Jakarta Sans;
+  background-color: aliceblue;
+}
+a {
+  text-decoration: none;
+  color: #f7f6f6;
+}
+ul {
+  list-style-type: none;
+}
+p {
+  line-height: 1.5;
+}
+
+.bg-body-tertiary {
+  --bs-bg-opacity: 0;
+}
+
+// extends
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+// mixin
+
+@mixin templateGrid($colMobile, $bp, $colDesktop) {
+  display: grid;
+  grid-template-columns: repeat($colMobile, 1fr);
+  gap: 20px;
+  @media (min-width: $bp) {
+    grid-template-columns: repeat($colDesktop, 1fr);
+  }
+}
+
+@mixin templateFlex($direction, $justify, $align) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+
+  @if ($align == true) {
+    align-items: $align;
+  }
+}

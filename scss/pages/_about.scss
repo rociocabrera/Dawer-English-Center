@@ -1,0 +1,198 @@
+.main {
+  @extend .container;
+  &__container-about {
+    @include templateFlex(column, center, true);
+    margin: 10px;
+    &-presentation {
+      h2,
+      h3 {
+        font-size: 20px;
+        font-weight: lighter;
+        color: $primaryColor;
+      }
+      p {
+        padding-top: 10px;
+        font-family: Plus Jakarta Sans;
+        font-size: 16px;
+        color: $primaryColor;
+        text-align: justify;
+      }
+      button {
+        width: 100%;
+        padding: 5px;
+        font-family: Plus Jakarta Sans;
+        font-size: 16px;
+        color: #f7f6f6;
+        background-color: $primaryColor;
+        border: $primaryColor;
+        border-radius: 50px;
+        @extend .box-shadow;
+      }
+      button:hover {
+        color: rgb(242, 237, 236);
+        background-color: rgb(10, 133, 228);
+        font-size: 16px;
+        box-shadow: 10px 5px 5px (10, 133, 228);
+      }
+    }
+    &-students {
+      margin: 20px 0;
+      img {
+        width: 100%;
+        border-radius: 5px;
+        object-fit: cover;
+      }
+    }
+    &-teacher {
+      img {
+        display: none;
+      }
+    }
+    &-expertise {
+      h3 {
+        margin-top: 10px;
+        font-size: 20px;
+        font-weight: lighter;
+        color: $primaryColor;
+      }
+      p {
+        padding-top: 5px;
+        font-family: Plus Jakarta Sans;
+        font-size: 16px;
+        color: $primaryColor;
+        text-align: justify;
+      }
+      button {
+        width: 100%;
+        padding: 5px;
+        font-family: Plus Jakarta Sans;
+        font-size: 16px;
+        color: #f7f6f6;
+        background-color: $primaryColor;
+        border: $primaryColor;
+        border-radius: 50px;
+        @extend .box-shadow;
+      }
+      button:hover {
+        color: rgb(242, 237, 236);
+        background-color: rgb(10, 133, 228);
+        font-size: 16px;
+        box-shadow: 10px 5px 5px (10, 133, 228);
+      }
+    }
+    &-mobile {
+      margin: 20px 0;
+      img {
+        width: 100%;
+        border-radius: 5px;
+        @extend .box-shadow;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+@media (min-width: $bpMedium) {
+  .main {
+    &__container-about {
+      @include templateFlex(column, center, false);
+      &-presentation {
+        h2,
+        h3 {
+          font-size: 30px;
+          margin-bottom: 10px;
+        }
+        p {
+          font-size: 20px;
+          margin: 0;
+        }
+        button {
+          margin: 15px 0px;
+          padding: 10px;
+        }
+      }
+      &-students {
+        img {
+          width: 100%;
+        }
+      }
+      &-teacher {
+        img {
+          display: none;
+        }
+      }
+      &-expertise {
+        @include templateFlex(column, center, true);
+        h3 {
+          font-size: 30px;
+          margin: 10px 0px;
+        }
+        p {
+          font-size: 20px;
+          margin: 0;
+        }
+        button {
+          margin: 15px 0px;
+          padding: 10px;
+        }
+      }
+      &-mobile {
+        display: grid;
+        width: 100%;
+        border-radius: 20px;
+        object-fit: cover;
+      }
+    }
+  }
+}
+@media (min-width: $bpLarge) {
+  .main {
+    &__container-about {
+      @include templateGrid(2, $bpLarge, 20px);
+      margin: 20px 10px;
+      &-presentation {
+        h2,
+        h3 {
+          font-size: 40px;
+        }
+        button {
+          width: 40%;
+          margin: 20px 0px;
+          padding: 10px;
+        }
+      }
+      &-students {
+        margin-top: 0px;
+        img {
+          display: grid;
+          width: 100%;
+          height: 100%;
+          border-radius: 5px;
+          object-fit: cover;
+          box-shadow: 10px 10px 5px rgb(226, 235, 241);
+        }
+      }
+      &-teacher {
+        img {
+          display: grid;
+          width: 100%;
+          height: 100%;
+          border-radius: 5px;
+          object-fit: cover;
+          box-shadow: 10px 10px 5px rgb(226, 235, 241);
+        }
+      }
+      &-expertise {
+        margin: 10px;
+        button {
+          width: 40%;
+          margin: 20px 0px;
+          padding: 10px;
+        }
+      }
+      &-mobile {
+        display: none;
+      }
+    }
+  }
+}

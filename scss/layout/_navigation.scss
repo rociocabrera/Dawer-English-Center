@@ -1,0 +1,29 @@
+.navbar-brand {
+  color: white;
+  margin-left: auto;
+  font-size: 15px;
+  margin-bottom: 0;
+  font-family: Plus Jakarta Sans;
+  text-transform: uppercase;
+  color: #f7f6f6;
+  filter: drop-shadow(1px 2px 5px #101939);
+}
+.navbar-brand:hover {
+  color: white;
+}
+.navbar-toggler {
+  background-color: rgb(248, 244, 244);
+  border-color: white;
+  margin-left: 20px;
+  padding: 5px;
+}
+.navbar-toggler-icon {
+  width: 1em;
+}
+.nav-link {
+  color: white;
+}
+.navbar-nav .nav-link.active {
+  color: orange;
+  text-decoration: underline;
+}

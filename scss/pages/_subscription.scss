@@ -1,0 +1,31 @@
+.card {
+  box-shadow: 6px 15px 13px 1px rgba(171, 182, 185, 0.3) !important;
+}
+.title {
+  color: $primaryColor;
+  box-shadow: 1px 5px 5px rgb(10, 133, 228);
+}
+
+.contact {
+  ::before {
+    content: "«";
+    color: #7f83b6;
+  }
+  ::after {
+    content: "»";
+    color: #7f83b6;
+  }
+}
+@media (min-width: $bpMedium) {
+  .card {
+    .price:hover {
+      color: $primaryColor;
+    }
+  }
+  .alert {
+    a:hover {
+      background-color: yellow;
+      border-radius: 3px;
+    }
+  }
+}

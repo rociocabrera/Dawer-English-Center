@@ -1,6 +1,23 @@
 @charset "UTF-8";
 /* breakpoints */
 /* font colors */
+button {
+  transform: translate(20px);
+  transition: all 0.5s ease-in-out;
+}
+
+/* advantages page */
+@keyframes animationCard {
+  0% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -346,7 +363,8 @@ button .box-shadow, button .main__container-about-mobile img, .main__container-a
 .main__container-image {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  justify-content: center;
+  align-items: true;
   margin: 0px;
 }
 .main__container-image img {
@@ -379,12 +397,9 @@ button .box-shadow, button .main__container-about-mobile img, .main__container-a
   justify-content: center;
   align-items: true;
 }
-.main__container-list-button a {
-  width: 100%;
-}
 .main__container-list-button a button {
-  width: 100%;
-  margin: 5px 0px;
+  width: 90%;
+  margin: 3px 0px;
   padding: 5px;
   font-family: Plus Jakarta Sans;
   color: #f7f6f6;
@@ -424,6 +439,11 @@ button .box-shadow, button .main__container-about-mobile img, .main__container-a
   }
   .main__container-list-button a {
     width: 100%;
+    margin: 0;
+  }
+  .main__container-list-button a button {
+    width: 90%;
+    margin: 2px 0;
   }
 }
 @media (min-width: 992px) {
@@ -459,9 +479,21 @@ button .box-shadow, button .main__container-about-mobile img, .main__container-a
     font-size: 26px;
     margin: 3px;
   }
+  .main__container-list ul li:hover {
+    margin-left: 20px;
+    transform: scale(1.1);
+    transition: all 0.5s ease-in-out;
+    border-bottom: 1px solid #0844a4;
+    border-radius: 10px;
+    padding: 0px 10px;
+  }
+  .main__container-list-button a {
+    width: 100%;
+    margin: 0;
+  }
   .main__container-list-button a button {
-    display: flex;
-    padding: 10px 50px;
+    width: 90%;
+    padding: 10px;
   }
 }
 .main__container-about {
@@ -485,7 +517,7 @@ button .box-shadow, button .main__container-about-mobile img, .main__container-a
   text-align: justify;
 }
 .main__container-about-presentation button {
-  width: 100%;
+  width: 90%;
   padding: 5px;
   font-family: Plus Jakarta Sans;
   font-size: 16px;
@@ -525,7 +557,7 @@ button .box-shadow, button .main__container-about-mobile img, .main__container-a
   text-align: justify;
 }
 .main__container-about-expertise button {
-  width: 100%;
+  width: 90%;
   padding: 5px;
   font-family: Plus Jakarta Sans;
   font-size: 16px;
@@ -618,7 +650,7 @@ button .box-shadow, button .main__container-about-mobile img, .main__container-a
     font-size: 40px;
   }
   .main__container-about-presentation button {
-    width: 40%;
+    width: 50%;
     margin: 20px 0px;
     padding: 10px;
   }
@@ -645,7 +677,7 @@ button .box-shadow, button .main__container-about-mobile img, .main__container-a
     margin: 10px;
   }
   .main__container-about-expertise button {
-    width: 40%;
+    width: 50%;
     margin: 20px 0px;
     padding: 10px;
   }
@@ -654,12 +686,18 @@ button .box-shadow, button .main__container-about-mobile img, .main__container-a
   }
 }
 .main__container-advantages span {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: true;
+  margin: 0 10px;
+  text-align: center;
+  background-color: white;
 }
 .main__container-advantages span h1 {
+  width: 100%;
   font-size: 20px;
   padding: 10px 20px;
-  margin: 0 10px;
   font-weight: bold;
   color: #0844a4;
   box-shadow: 1px 5px 5px rgb(10, 133, 228);
@@ -679,6 +717,12 @@ button .box-shadow, button .main__container-about-mobile img, .main__container-a
   box-shadow: 5px 5px 5px rgb(208, 213, 249);
   border-radius: 10px;
   margin-top: 10px;
+  background-color: white;
+  animation-name: animationCard;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
 }
 .main__container-advantages-card-container img {
   width: 100px;
@@ -686,11 +730,6 @@ button .box-shadow, button .main__container-about-mobile img, .main__container-a
   border-radius: 5px;
   object-fit: cover;
   margin-top: 10px;
-}
-.main__container-advantages-card-container img:hover {
-  padding: 5px;
-  border-radius: 10px;
-  filter: drop-shadow(1px 5px 1px rgba(0, 0, 0, 0.3));
 }
 .main__container-advantages-card-container h2 {
   font-size: 20px;
@@ -709,7 +748,6 @@ button .box-shadow, button .main__container-about-mobile img, .main__container-a
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: true;
     margin: 0 10px;
   }
   .main span h1 {
@@ -767,13 +805,19 @@ button .box-shadow, button .main__container-about-mobile img, .main__container-a
     font-size: 20px;
   }
 }
+.title {
+  color: #0844a4;
+  box-shadow: 1px 5px 5px rgb(10, 133, 228);
+  background-color: white;
+}
+
 .card {
   box-shadow: 6px 15px 13px 1px rgba(171, 182, 185, 0.3) !important;
 }
 
-.title {
-  color: #0844a4;
-  box-shadow: 1px 5px 5px rgb(10, 133, 228);
+.price:hover {
+  transform: scale(1.1);
+  transition: all 0.5s ease-in-out;
 }
 
 .contact ::before {
@@ -911,6 +955,8 @@ button .box-shadow, button .main__container-about-mobile img, .main__container-a
   font-family: Plus Jakarta Sans;
   color: #7f83b6;
   box-shadow: 5px 5px 5px rgb(208, 213, 249);
+  transition: none;
+  transform: none;
 }
 
 @media (min-width: 768px) {

@@ -2,11 +2,15 @@
   @extend .container;
   &__container-advantages {
     span {
-      display: block;
+      @include templateFlex(column, center, true);
+      margin: 0 10px;
+      text-align: center;
+      background-color: white;
+
       h1 {
+        width: 100%;
         font-size: 20px;
         padding: 10px 20px;
-        margin: 0 10px;
         font-weight: bold;
         color: $primaryColor;
         box-shadow: 1px 5px 5px rgb(10, 133, 228);
@@ -23,17 +27,18 @@
         box-shadow: 5px 5px 5px rgb(208, 213, 249);
         border-radius: 10px;
         margin-top: 10px;
+        background-color: white;
+        animation-name: animationCard;
+        animation-duration: 2s;
+        animation-iteration-count: 1;
+        animation-direction: alternate;
+        animation-timing-function: ease-in-out;
         img {
           width: 100px;
           height: 100px;
           border-radius: 5px;
           object-fit: cover;
           margin-top: 10px;
-        }
-        img:hover {
-          padding: 5px;
-          border-radius: 10px;
-          filter: drop-shadow(1px 5px 1px rgba(0, 0, 0, 0.3));
         }
         h2 {
           font-size: 20px;
@@ -54,7 +59,7 @@
 @media (min-width: $bpMedium) {
   .main {
     span {
-      @include templateFlex(column, space-between, true);
+      @include templateFlex(column, space-between, false);
       margin: 0 10px;
       h1 {
         font-size: 40px;

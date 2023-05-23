@@ -1,9 +1,14 @@
-.card {
-  box-shadow: 6px 15px 13px 1px rgba(171, 182, 185, 0.3) !important;
-}
 .title {
   color: $primaryColor;
   box-shadow: 1px 5px 5px rgb(10, 133, 228);
+  background-color: white;
+}
+.card {
+  box-shadow: 6px 15px 13px 1px rgba(171, 182, 185, 0.3) !important;
+}
+.price:hover {
+  transform: scale(1.1);
+  transition: all 0.5s ease-in-out;
 }
 
 .contact {

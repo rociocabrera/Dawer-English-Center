@@ -23,9 +23,7 @@
       }
     }
     &-image {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
+      @include templateFlex(row, center, true);
       margin: 0px;
       img {
         width: 100%;
@@ -54,10 +52,9 @@
       &-button {
         @include templateFlex(column, center, true);
         a {
-          width: 100%;
           button {
-            width: 100%;
-            margin: 5px 0px;
+            width: 90%;
+            margin: 3px 0px;
             padding: 5px;
             font-family: Plus Jakarta Sans;
             color: #f7f6f6;
@@ -100,6 +97,11 @@
           padding: 10px 0;
           a {
             width: 100%;
+            margin: 0;
+            button {
+              width: 90%;
+              margin: 2px 0;
+            }
           }
         }
       }
@@ -134,17 +136,26 @@
         ul {
           margin: 10px 0;
           padding: 0;
-
           li {
             font-size: 26px;
             margin: 3px;
           }
+          li:hover {
+            margin-left: 20px;
+            transform: scale(1.1);
+            transition: all 0.5s ease-in-out;
+            border-bottom: 1px solid $primaryColor;
+            border-radius: 10px;
+            padding: 0px 10px;
+          }
         }
         &-button {
           a {
+            width: 100%;
+            margin: 0;
             button {
-              display: flex;
-              padding: 10px 50px;
+              width: 90%;
+              padding: 10px;
             }
           }
         }

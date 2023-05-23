@@ -50,10 +50,10 @@
         }
       }
       &-button {
-        @include templateFlex(column, center, true);
+        display: flex;
         a {
           button {
-            width: 90%;
+            width: 100%;
             margin: 3px 0px;
             padding: 5px;
             font-family: Plus Jakarta Sans;

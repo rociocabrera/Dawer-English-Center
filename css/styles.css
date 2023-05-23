@@ -2,8 +2,8 @@
 /* breakpoints */
 /* font colors */
 button {
-  transform: translate(20px);
-  transition: all 0.5s ease-in-out;
+  transform: translate(30px);
+  transition: all 0.9s ease-in-out;
 }
 
 /* advantages page */
@@ -238,18 +238,15 @@ p {
   position: sticky;
   background: linear-gradient(90deg, rgb(5, 60, 149) 42%, rgb(71, 129, 230) 71%);
 }
-
 .header__container {
   display: flex;
   max-width: 1200px;
   margin: 0 auto;
-  justify-content: space-around;
+  justify-content: space-between;
 }
-
-.header__container-left {
+.header__container-logo {
   margin-left: 10px;
 }
-
 .header__container-logo img {
   width: 40px;
   height: 40px;
@@ -259,21 +256,17 @@ p {
   object-fit: cover;
   filter: drop-shadow(1px 1px 4px #56a5c9);
 }
-
-.header__container-right {
+.header__container-title {
   display: flex;
   flex-direction: column;
 }
-
-.header__container-right h1 {
+.header__container-title h1 {
   display: none;
 }
-
-.header__container-right .header__container-navbar {
+.header__container-title-navbar {
   display: none;
 }
-
-.header__container-navbar-mobile {
+.header__container-mobile {
   display: flex;
   flex-direction: column;
   padding-right: 10px;
@@ -287,10 +280,10 @@ p {
     width: 100px;
     height: 100px;
   }
-  .header__container-right {
+  .header__container-title {
     margin-top: 10px;
   }
-  .header__container-right h1 {
+  .header__container-title h1 {
     display: block;
     font-size: 40px;
     padding-left: 40px;
@@ -300,41 +293,43 @@ p {
     color: #f7f6f6;
     filter: drop-shadow(1px 2px 5px #101939);
   }
-  .header__container-right .header__container-navbar {
+  .header__container-title-navbar {
     display: flex;
     margin: 10px auto;
     text-transform: uppercase;
     flex-wrap: nowrap;
   }
-  .header__container-right .header__container-navbar ul {
+  .header__container-title-navbar ul {
     display: flex;
   }
-  .header__container-right .header__container-navbar li a {
+  .header__container-title-navbar ul li {
+    margin-right: 10px;
+  }
+  .header__container-title-navbar ul li a {
     padding: 5px;
     margin: 5px;
     text-decoration: none;
     color: #f7f6f6;
   }
-  .header__container-right li {
-    margin-right: 10px;
-  }
-  .header__container-right .header__container-navbar ul li a:hover,
-  .header__container-right .header__container-navbar ul li a:active {
+  .header__container-title-navbar ul li a:hover:active {
     color: orange;
     background-color: #0844a4;
     border-radius: 5px;
     padding: 5px;
     margin: 5px;
   }
-}
-@media (min-width: 768px) {
-  .header__container-navbar-mobile {
+  .header__container-mobile {
     display: none;
   }
 }
 /* extend */
 button .box-shadow, button .main__container-about-mobile img, .main__container-about-mobile button img, button .main__container-about-expertise button, .main__container-about-expertise button button, button .main__container-about-presentation button, .main__container-about-presentation button button, button .main__container-list-button a button:hover, .main__container-list-button a button button:hover, button .main__container-list-button a button, .main__container-list-button a button button, button .main__container-image img, .main__container-image button img {
   box-shadow: 5px 5px 5px rgb(242, 238, 238);
+}
+
+.button_header {
+  transform: none;
+  transition: none;
 }
 
 .main__container {
@@ -393,12 +388,9 @@ button .box-shadow, button .main__container-about-mobile img, .main__container-a
 }
 .main__container-list-button {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: true;
 }
 .main__container-list-button a button {
-  width: 90%;
+  width: 100%;
   margin: 3px 0px;
   padding: 5px;
   font-family: Plus Jakarta Sans;
@@ -517,7 +509,7 @@ button .box-shadow, button .main__container-about-mobile img, .main__container-a
   text-align: justify;
 }
 .main__container-about-presentation button {
-  width: 90%;
+  width: 80%;
   padding: 5px;
   font-family: Plus Jakarta Sans;
   font-size: 16px;
@@ -557,7 +549,7 @@ button .box-shadow, button .main__container-about-mobile img, .main__container-a
   text-align: justify;
 }
 .main__container-about-expertise button {
-  width: 90%;
+  width: 80%;
   padding: 5px;
   font-family: Plus Jakarta Sans;
   font-size: 16px;
@@ -641,7 +633,7 @@ button .box-shadow, button .main__container-about-mobile img, .main__container-a
 }
 @media (min-width: 992px) and (min-width: 992px) {
   .main__container-about {
-    grid-template-columns: repeat(20px, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 @media (min-width: 992px) {
@@ -709,20 +701,15 @@ button .box-shadow, button .main__container-about-mobile img, .main__container-a
   justify-content: space-between;
   align-items: true;
   max-width: 1200px;
-  margin: 20px 10px;
+  margin: 10px 10px;
+  gap: 20px;
 }
 .main__container-advantages-card-container {
   display: flex;
   flex-direction: row;
   box-shadow: 5px 5px 5px rgb(208, 213, 249);
   border-radius: 10px;
-  margin-top: 10px;
   background-color: white;
-  animation-name: animationCard;
-  animation-duration: 2s;
-  animation-iteration-count: 1;
-  animation-direction: alternate;
-  animation-timing-function: ease-in-out;
 }
 .main__container-advantages-card-container img {
   width: 100px;
@@ -752,17 +739,18 @@ button .box-shadow, button .main__container-about-mobile img, .main__container-a
   }
   .main span h1 {
     font-size: 40px;
-    padding: 5px 20px;
+    padding: 10px 20px;
     margin: 0px;
     font-weight: lighter;
     width: 100%;
   }
   .main__container-advantages {
-    margin: 20px 10px;
+    margin: 0px 10px;
   }
   .main__container-advantages-card {
     max-width: 1200px;
-    margin: 0 10px;
+    margin: 20px 10px;
+    gap: 10px;
   }
   .main__container-advantages-card img {
     width: 200px;
@@ -776,15 +764,14 @@ button .box-shadow, button .main__container-about-mobile img, .main__container-a
     color: #0844a4;
     font-size: 16px;
   }
-  .main__container-advantages-card-container {
-    margin-top: 20px;
-  }
 }
 @media (min-width: 992px) {
   .main__container-advantages-card {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 20px;
+    margin-top: 20px;
+    gap: 25px;
   }
 }
 @media (min-width: 992px) and (min-width: 992px) {
@@ -793,6 +780,13 @@ button .box-shadow, button .main__container-about-mobile img, .main__container-a
   }
 }
 @media (min-width: 992px) {
+  .main__container-advantages-card-container {
+    animation-name: animationCard;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+  }
   .main__container-advantages-card-container img {
     width: 150px;
     height: 150px;
@@ -805,19 +799,14 @@ button .box-shadow, button .main__container-about-mobile img, .main__container-a
     font-size: 20px;
   }
 }
-.title {
+.title-subscription {
+  border-radius: 10px;
+  box-shadow: 1px 5px 5px rgb(10, 133, 228) !important;
+  padding: 5px 20px;
+}
+.title-subscription h1 {
+  font-size: 1.5rem !important;
   color: #0844a4;
-  box-shadow: 1px 5px 5px rgb(10, 133, 228);
-  background-color: white;
-}
-
-.card {
-  box-shadow: 6px 15px 13px 1px rgba(171, 182, 185, 0.3) !important;
-}
-
-.price:hover {
-  transform: scale(1.1);
-  transition: all 0.5s ease-in-out;
 }
 
 .contact ::before {
@@ -836,6 +825,12 @@ button .box-shadow, button .main__container-about-mobile img, .main__container-a
   .alert a:hover {
     background-color: yellow;
     border-radius: 3px;
+  }
+}
+@media (min-width: 992px) {
+  .price-card:hover {
+    transform: scale(1.1);
+    transition: all 0.5s ease-in-out;
   }
 }
 .main__contact span h1 {

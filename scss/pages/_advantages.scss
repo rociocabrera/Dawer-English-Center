@@ -20,19 +20,14 @@
     &-card {
       @include templateFlex(column, space-between, true);
       max-width: 1200px;
-      margin: 20px 10px;
+      margin: 10px 10px;
+      gap: 20px;
       &-container {
         display: flex;
         flex-direction: row;
         box-shadow: 5px 5px 5px rgb(208, 213, 249);
         border-radius: 10px;
-        margin-top: 10px;
         background-color: white;
-        animation-name: animationCard;
-        animation-duration: 2s;
-        animation-iteration-count: 1;
-        animation-direction: alternate;
-        animation-timing-function: ease-in-out;
         img {
           width: 100px;
           height: 100px;
@@ -63,17 +58,18 @@
       margin: 0 10px;
       h1 {
         font-size: 40px;
-        padding: 5px 20px;
+        padding: 10px 20px;
         margin: 0px;
         font-weight: lighter;
         width: 100%;
       }
     }
     &__container-advantages {
-      margin: 20px 10px;
+      margin: 0px 10px;
       &-card {
         max-width: 1200px;
-        margin: 0 10px;
+        margin: 20px 10px;
+        gap: 10px;
         img {
           width: 200px;
           height: 200px;
@@ -88,9 +84,6 @@
             font-size: 16px;
           }
         }
-        &-container {
-          margin-top: 20px;
-        }
       }
     }
   }
@@ -101,7 +94,14 @@
     &__container-advantages {
       &-card {
         @include templateGrid(1, $bpLarge, 2);
+        margin-top: 20px;
+        gap: 25px;
         &-container {
+          animation-name: animationCard;
+          animation-duration: 2s;
+          animation-iteration-count: 1;
+          animation-direction: alternate;
+          animation-timing-function: ease-in-out;
           img {
             width: 150px;
             height: 150px;

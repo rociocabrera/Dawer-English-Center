@@ -51,17 +51,23 @@
       }
       &-button {
         display: flex;
+        justify-content: center;
         a {
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          width: 100%;
           button {
             width: 100%;
-            margin: 3px 0px;
-            padding: 5px;
+            margin: 5px 0px;
+            padding: 10px;
+            transform: none;
             font-family: Plus Jakarta Sans;
-            color: #f7f6f6;
             font-size: 16px;
+            color: #f7f6f6;
             background-color: $primaryColor;
-            border-radius: 10px;
-            border-color: rgb(10, 133, 228);
+            border: $primaryColor;
+            border-radius: 50px;
             @extend .box-shadow;
           }
           button:hover {
@@ -88,6 +94,7 @@
         justify-content: space-between;
         margin-top: 10px;
         ul {
+          margin: 10px 0px;
           li {
             font-size: 18px;
           }
@@ -95,11 +102,12 @@
         &-button {
           @include templateFlex(column, start, false);
           padding: 10px 0;
+          width: 40%;
           a {
             width: 100%;
             margin: 0;
             button {
-              width: 90%;
+              width: 100%;
               margin: 2px 0;
             }
           }
@@ -137,7 +145,7 @@
           margin: 10px 0;
           padding: 0;
           li {
-            font-size: 26px;
+            font-size: 22px;
             margin: 3px;
           }
           li:hover {
@@ -147,14 +155,16 @@
             border-bottom: 1px solid $primaryColor;
             border-radius: 10px;
             padding: 0px 10px;
+            font-size: 22px;
           }
         }
         &-button {
+          width: 35%;
           a {
             width: 100%;
             margin: 0;
             button {
-              width: 90%;
+              width: 100%;
               padding: 10px;
             }
           }

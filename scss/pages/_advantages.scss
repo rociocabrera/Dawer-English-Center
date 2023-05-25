@@ -33,7 +33,7 @@
           height: 100px;
           border-radius: 5px;
           object-fit: cover;
-          margin-top: 10px;
+          margin: 10px;
         }
         h2 {
           font-size: 20px;
@@ -44,7 +44,7 @@
         }
         p {
           color: $primaryColor;
-          margin: 5px 10px;
+          margin: 10px;
         }
       }
     }
@@ -53,34 +53,26 @@
 
 @media (min-width: $bpMedium) {
   .main {
-    span {
-      @include templateFlex(column, space-between, false);
-      margin: 0 10px;
-      h1 {
-        font-size: 40px;
-        padding: 10px 20px;
-        margin: 0px;
-        font-weight: lighter;
-        width: 100%;
-      }
-    }
     &__container-advantages {
-      margin: 0px 10px;
-      &-card {
-        max-width: 1200px;
-        margin: 20px 10px;
-        gap: 10px;
-        img {
-          width: 200px;
-          height: 200px;
-          margin-top: 0;
+      span {
+        @include templateFlex(column, space-between, false);
+        margin: 0 10px;
+        h1 {
+          font-size: 40px;
+          padding: 10px 20px;
+          margin: 0px;
+          font-weight: lighter;
+          width: 100%;
         }
-        &-info {
-          h2 {
-            margin: 0 10px;
+      }
+      &-card {
+        &-container {
+          img {
+            width: 200px;
+            height: 200px;
+            margin: 10px;
           }
           p {
-            color: $primaryColor;
             font-size: 16px;
           }
         }
@@ -88,13 +80,12 @@
     }
   }
 }
-
 @media (min-width: $bpLarge) {
   .main {
     &__container-advantages {
       &-card {
         @include templateGrid(1, $bpLarge, 2);
-        margin-top: 20px;
+        margin: 20px 10px;
         gap: 25px;
         &-container {
           animation-name: animationCard;
@@ -105,7 +96,7 @@
           img {
             width: 150px;
             height: 150px;
-            margin: 10px 0;
+            margin: 10px;
           }
           h2 {
             font-size: 30px;

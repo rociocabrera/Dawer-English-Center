@@ -4,6 +4,8 @@
     @include templateFlex(column, center, true);
     margin: 10px;
     &-presentation {
+      @include templateFlex(column, center, true);
+      align-items: center;
       h2,
       h3 {
         font-size: 20px;
@@ -17,16 +19,23 @@
         color: $primaryColor;
         text-align: justify;
       }
-      button {
-        width: 80%;
-        padding: 5px;
-        font-family: Plus Jakarta Sans;
-        font-size: 16px;
-        color: #f7f6f6;
-        background-color: $primaryColor;
-        border: $primaryColor;
-        border-radius: 50px;
-        @extend .box-shadow;
+      a {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        button {
+          width: 80%;
+          margin: 0px;
+          padding: 5px;
+          transform: none;
+          font-family: Plus Jakarta Sans;
+          font-size: 16px;
+          color: #f7f6f6;
+          background-color: $primaryColor;
+          border: $primaryColor;
+          border-radius: 50px;
+          @extend .box-shadow;
+        }
       }
       button:hover {
         color: rgb(242, 237, 236);
@@ -49,6 +58,8 @@
       }
     }
     &-expertise {
+      @include templateFlex(column, center, true);
+      align-items: center;
       h3 {
         margin-top: 10px;
         font-size: 20px;
@@ -62,16 +73,23 @@
         color: $primaryColor;
         text-align: justify;
       }
-      button {
-        width: 80%;
-        padding: 5px;
-        font-family: Plus Jakarta Sans;
-        font-size: 16px;
-        color: #f7f6f6;
-        background-color: $primaryColor;
-        border: $primaryColor;
-        border-radius: 50px;
-        @extend .box-shadow;
+      a {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        button {
+          width: 80%;
+          margin: 0px;
+          padding: 5px;
+          transform: none;
+          font-family: Plus Jakarta Sans;
+          font-size: 16px;
+          color: #f7f6f6;
+          background-color: $primaryColor;
+          border: $primaryColor;
+          border-radius: 50px;
+          @extend .box-shadow;
+        }
       }
       button:hover {
         color: rgb(242, 237, 236);
@@ -106,9 +124,16 @@
           font-size: 20px;
           margin: 0;
         }
-        button {
-          margin: 15px 0px;
-          padding: 10px;
+        a {
+          display: flex;
+          justify-content: center;
+          width: 100%;
+          button {
+            width: 80%;
+            margin: 20px 0px;
+            padding: 10px;
+            transform: none;
+          }
         }
       }
       &-students {
@@ -131,9 +156,16 @@
           font-size: 20px;
           margin: 0;
         }
-        button {
-          margin: 15px 0px;
-          padding: 10px;
+        a {
+          display: flex;
+          justify-content: center;
+          width: 100%;
+          button {
+            width: 80%;
+            margin: 20px 0px;
+            padding: 10px;
+            transform: none;
+          }
         }
       }
       &-mobile {
@@ -151,6 +183,7 @@
       @include templateGrid(2, $bpLarge, 2);
       margin: 20px 10px;
       &-presentation {
+        align-items: start;
         h2,
         h3 {
           font-size: 40px;
@@ -183,6 +216,7 @@
         }
       }
       &-expertise {
+        align-items: start;
         margin: 10px;
         button {
           width: 50%;

@@ -389,7 +389,7 @@ button .box-shadow, button .main__container-about-mobile img, .main__container-a
 .main__container-list ul {
   list-style: none;
   padding: 0;
-  margin: 20px 0px;
+  margin: 10px 0px;
 }
 .main__container-list ul li {
   display: flex;
@@ -549,6 +549,7 @@ button .box-shadow, button .main__container-about-mobile img, .main__container-a
   display: flex;
   justify-content: center;
   width: 100%;
+  margin: 15px 0;
 }
 .main__container-about-presentation a button {
   width: 80%;
@@ -569,7 +570,7 @@ button .box-shadow, button .main__container-about-mobile img, .main__container-a
   box-shadow: 10px 5px 5px 10, 133, 228;
 }
 .main__container-about-students {
-  margin: 20px 0;
+  margin: 10px 0;
 }
 .main__container-about-students img {
   width: 100%;
@@ -604,6 +605,7 @@ button .box-shadow, button .main__container-about-mobile img, .main__container-a
   display: flex;
   justify-content: center;
   width: 100%;
+  margin: 15px 0;
 }
 .main__container-about-expertise a button {
   width: 80%;
@@ -624,7 +626,7 @@ button .box-shadow, button .main__container-about-mobile img, .main__container-a
   box-shadow: 10px 5px 5px 10, 133, 228;
 }
 .main__container-about-mobile {
-  margin: 20px 0;
+  margin: 10px 0;
 }
 .main__container-about-mobile img {
   width: 100%;
@@ -651,6 +653,7 @@ button .box-shadow, button .main__container-about-mobile img, .main__container-a
     display: flex;
     justify-content: center;
     width: 100%;
+    margin: 0;
   }
   .main__container-about-presentation a button {
     width: 80%;
@@ -682,6 +685,7 @@ button .box-shadow, button .main__container-about-mobile img, .main__container-a
     display: flex;
     justify-content: center;
     width: 100%;
+    margin: 0;
   }
   .main__container-about-expertise a button {
     width: 80%;

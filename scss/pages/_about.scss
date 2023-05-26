@@ -24,6 +24,7 @@
         display: flex;
         justify-content: center;
         width: 100%;
+        margin: 15px 0;
         button {
           width: 80%;
           margin: 0px;
@@ -46,7 +47,7 @@
       }
     }
     &-students {
-      margin: 20px 0;
+      margin: 10px 0;
       img {
         width: 100%;
         border-radius: 5px;
@@ -79,6 +80,7 @@
         display: flex;
         justify-content: center;
         width: 100%;
+        margin: 15px 0;
         button {
           width: 80%;
           margin: 0px;
@@ -101,7 +103,7 @@
       }
     }
     &-mobile {
-      margin: 20px 0;
+      margin: 10px 0;
       img {
         width: 100%;
         border-radius: 5px;
@@ -130,6 +132,7 @@
           display: flex;
           justify-content: center;
           width: 100%;
+          margin: 0;
           button {
             width: 80%;
             margin: 20px 0px;
@@ -162,6 +165,7 @@
           display: flex;
           justify-content: center;
           width: 100%;
+          margin: 0;
           button {
             width: 80%;
             margin: 20px 0px;
